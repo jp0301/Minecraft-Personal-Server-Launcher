@@ -1,13 +1,13 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "rss": "",
   "servers": [
     {
       "id": "heyodd-1.21.1",
       "name": "영무예다음",
       "description": "충북혁신도시 영무예다음 친구들을 위한 Vanilla+ Minecraft 서버",
-      "icon": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/src/HeyOddLauncher/Assets/yeongmu-yedaeum-bg.png",
-      "version": "0.1.0",
+      "icon": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/server-icon.png",
+      "version": "0.2.0",
       "address": "heyodd.iptime.org",
       "minecraftVersion": "1.21.1",
       "javaOptions": {
@@ -21,7 +21,950 @@
       },
       "mainServer": true,
       "autoconnect": true,
-      "modules": []
+      "modules": [
+        {
+          "id": "net.neoforged:neoforge:21.1.249:client",
+          "name": "NeoForge 21.1.249",
+          "type": "ForgeHosted",
+          "artifact": {
+            "size": 5675624,
+            "MD5": "0fe7826ecbb207c9be2ffd718828f559",
+            "url": "https://maven.neoforged.net/releases/net/neoforged/neoforge/21.1.249/neoforge-21.1.249-client.jar"
+          },
+          "subModules": [
+            {
+              "id": "net.neoforged:neoforge:21.1.249:universal",
+              "name": "NeoForge universal",
+              "type": "Library",
+              "artifact": {
+                "size": 3551266,
+                "MD5": "a05adc8abaa18e93671075162255c435",
+                "url": "https://maven.neoforged.net/releases/net/neoforged/neoforge/21.1.249/neoforge-21.1.249-universal.jar"
+              }
+            },
+            {
+              "id": "neoforge-21.1.249",
+              "name": "NeoForge version manifest",
+              "type": "VersionManifest",
+              "artifact": {
+                "size": 21251,
+                "MD5": "f6b79cd3ac09a3b17771ac9de25dd194",
+                "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/neoforge/neoforge-21.1.249.json"
+              }
+            },
+            {
+              "id": "net.neoforged.fancymodloader:earlydisplay:4.0.44",
+              "name": "net.neoforged.fancymodloader:earlydisplay:4.0.44",
+              "type": "Library",
+              "artifact": {
+                "size": 261718,
+                "MD5": "7646fcabfb8a5f608361f03b8d68dddb",
+                "url": "https://maven.neoforged.net/releases/net/neoforged/fancymodloader/earlydisplay/4.0.44/earlydisplay-4.0.44.jar"
+              }
+            },
+            {
+              "id": "net.neoforged.fancymodloader:loader:4.0.44",
+              "name": "net.neoforged.fancymodloader:loader:4.0.44",
+              "type": "Library",
+              "artifact": {
+                "size": 505708,
+                "MD5": "552c6cb730601460b332545e18ce33fc",
+                "url": "https://maven.neoforged.net/releases/net/neoforged/fancymodloader/loader/4.0.44/loader-4.0.44.jar"
+              }
+            },
+            {
+              "id": "net.neoforged.accesstransformers:at-modlauncher:10.0.1",
+              "name": "net.neoforged.accesstransformers:at-modlauncher:10.0.1",
+              "type": "Library",
+              "artifact": {
+                "size": 2347,
+                "MD5": "f65434f122b97b1ac8fe56ff54873b5f",
+                "url": "https://maven.neoforged.net/releases/net/neoforged/accesstransformers/at-modlauncher/10.0.1/at-modlauncher-10.0.1.jar"
+              }
+            },
+            {
+              "id": "net.neoforged:accesstransformers:10.0.1",
+              "name": "net.neoforged:accesstransformers:10.0.1",
+              "type": "Library",
+              "artifact": {
+                "size": 67234,
+                "MD5": "3a01a09a2b0900381dce48e118882849",
+                "url": "https://maven.neoforged.net/releases/net/neoforged/accesstransformers/10.0.1/accesstransformers-10.0.1.jar"
+              }
+            },
+            {
+              "id": "net.neoforged:bus:8.0.5",
+              "name": "net.neoforged:bus:8.0.5",
+              "type": "Library",
+              "artifact": {
+                "size": 30340,
+                "MD5": "95eee080d9de7cb764adcb8fa2ecf3fb",
+                "url": "https://maven.neoforged.net/releases/net/neoforged/bus/8.0.5/bus-8.0.5.jar"
+              }
+            },
+            {
+              "id": "net.neoforged:coremods:7.0.3",
+              "name": "net.neoforged:coremods:7.0.3",
+              "type": "Library",
+              "artifact": {
+                "size": 22659,
+                "MD5": "4527abf6b7116dae1c2178f7beab0ba2",
+                "url": "https://maven.neoforged.net/releases/net/neoforged/coremods/7.0.3/coremods-7.0.3.jar"
+              }
+            },
+            {
+              "id": "cpw.mods:modlauncher:11.0.5",
+              "name": "cpw.mods:modlauncher:11.0.5",
+              "type": "Library",
+              "artifact": {
+                "size": 116486,
+                "MD5": "70fa994f64b2620d20dc325bab758d1b",
+                "url": "https://maven.neoforged.net/releases/cpw/mods/modlauncher/11.0.5/modlauncher-11.0.5.jar"
+              }
+            },
+            {
+              "id": "net.neoforged:mergetool:2.0.0:api",
+              "name": "net.neoforged:mergetool:2.0.0:api",
+              "type": "Library",
+              "artifact": {
+                "size": 2550,
+                "MD5": "818b398f65b8dc5af802b721fd1d0b56",
+                "url": "https://maven.neoforged.net/releases/net/neoforged/mergetool/2.0.0/mergetool-2.0.0-api.jar"
+              }
+            },
+            {
+              "id": "com.electronwill.night-config:toml:3.8.3",
+              "name": "com.electronwill.night-config:toml:3.8.3",
+              "type": "Library",
+              "artifact": {
+                "size": 39516,
+                "MD5": "71c9f7b86422f206c0d78c1a0600fd3a",
+                "url": "https://maven.neoforged.net/releases/com/electronwill/night-config/toml/3.8.3/toml-3.8.3.jar"
+              }
+            },
+            {
+              "id": "com.electronwill.night-config:core:3.8.3",
+              "name": "com.electronwill.night-config:core:3.8.3",
+              "type": "Library",
+              "artifact": {
+                "size": 382911,
+                "MD5": "a69db71d5c9c274ff08f175d7c12cb1a",
+                "url": "https://maven.neoforged.net/releases/com/electronwill/night-config/core/3.8.3/core-3.8.3.jar"
+              }
+            },
+            {
+              "id": "net.neoforged:JarJarSelector:0.4.1",
+              "name": "net.neoforged:JarJarSelector:0.4.1",
+              "type": "Library",
+              "artifact": {
+                "size": 17168,
+                "MD5": "20d1fe8972655189f69845554ee1a4d1",
+                "url": "https://maven.neoforged.net/releases/net/neoforged/JarJarSelector/0.4.1/JarJarSelector-0.4.1.jar"
+              }
+            },
+            {
+              "id": "net.neoforged:JarJarMetadata:0.4.1",
+              "name": "net.neoforged:JarJarMetadata:0.4.1",
+              "type": "Library",
+              "artifact": {
+                "size": 15648,
+                "MD5": "c2f30969dd8b1dc8e3f78c731bd2c5c8",
+                "url": "https://maven.neoforged.net/releases/net/neoforged/JarJarMetadata/0.4.1/JarJarMetadata-0.4.1.jar"
+              }
+            },
+            {
+              "id": "org.apache.maven:maven-artifact:3.8.5",
+              "name": "org.apache.maven:maven-artifact:3.8.5",
+              "type": "Library",
+              "artifact": {
+                "size": 58077,
+                "MD5": "ce473b0d9fbfd10fe147f03fe8707d67",
+                "url": "https://maven.neoforged.net/releases/org/apache/maven/maven-artifact/3.8.5/maven-artifact-3.8.5.jar"
+              }
+            },
+            {
+              "id": "net.jodah:typetools:0.6.3",
+              "name": "net.jodah:typetools:0.6.3",
+              "type": "Library",
+              "artifact": {
+                "size": 18281,
+                "MD5": "d4a375bf382f726cf1a650ccb38a736c",
+                "url": "https://maven.neoforged.net/releases/net/jodah/typetools/0.6.3/typetools-0.6.3.jar"
+              }
+            },
+            {
+              "id": "net.minecrell:terminalconsoleappender:1.3.0",
+              "name": "net.minecrell:terminalconsoleappender:1.3.0",
+              "type": "Library",
+              "artifact": {
+                "size": 16949,
+                "MD5": "179d3abaf9736dbd8fbd4fa98e1c6ea1",
+                "url": "https://maven.neoforged.net/releases/net/minecrell/terminalconsoleappender/1.3.0/terminalconsoleappender-1.3.0.jar"
+              }
+            },
+            {
+              "id": "net.fabricmc:sponge-mixin:0.15.2+mixin.0.8.7",
+              "name": "net.fabricmc:sponge-mixin:0.15.2+mixin.0.8.7",
+              "type": "Library",
+              "artifact": {
+                "size": 1494751,
+                "MD5": "4808c070bf19415a5cb4a0cb5e569b12",
+                "url": "https://maven.neoforged.net/releases/net/fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/sponge-mixin-0.15.2+mixin.0.8.7.jar"
+              }
+            },
+            {
+              "id": "org.openjdk.nashorn:nashorn-core:15.4",
+              "name": "org.openjdk.nashorn:nashorn-core:15.4",
+              "type": "Library",
+              "artifact": {
+                "size": 2167292,
+                "MD5": "a9b3360e6a486cf62c1952c7816b7d97",
+                "url": "https://maven.neoforged.net/releases/org/openjdk/nashorn/nashorn-core/15.4/nashorn-core-15.4.jar"
+              }
+            },
+            {
+              "id": "org.apache.commons:commons-lang3:3.14.0",
+              "name": "org.apache.commons:commons-lang3:3.14.0",
+              "type": "Library",
+              "artifact": {
+                "size": 657952,
+                "MD5": "4e5c3f5e6b0b965ef241d7d72ac8971f",
+                "url": "https://libraries.minecraft.net/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar"
+              }
+            },
+            {
+              "id": "cpw.mods:bootstraplauncher:2.0.2",
+              "name": "cpw.mods:bootstraplauncher:2.0.2",
+              "type": "Library",
+              "artifact": {
+                "size": 11116,
+                "MD5": "169bd8c006e69d83267466e311d4049d",
+                "url": "https://maven.neoforged.net/releases/cpw/mods/bootstraplauncher/2.0.2/bootstraplauncher-2.0.2.jar"
+              }
+            },
+            {
+              "id": "cpw.mods:securejarhandler:3.0.8",
+              "name": "cpw.mods:securejarhandler:3.0.8",
+              "type": "Library",
+              "artifact": {
+                "size": 103765,
+                "MD5": "eb0d5290a2681c2dbeb8088b82e0fbf9",
+                "url": "https://maven.neoforged.net/releases/cpw/mods/securejarhandler/3.0.8/securejarhandler-3.0.8.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-commons:9.10.1",
+              "name": "org.ow2.asm:asm-commons:9.10.1",
+              "type": "Library",
+              "artifact": {
+                "size": 74840,
+                "MD5": "8eee0b1bdd046baf472eb83dd5e6bb44",
+                "url": "https://maven.neoforged.net/releases/org/ow2/asm/asm-commons/9.10.1/asm-commons-9.10.1.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-util:9.10.1",
+              "name": "org.ow2.asm:asm-util:9.10.1",
+              "type": "Library",
+              "artifact": {
+                "size": 95628,
+                "MD5": "d0892ecb209867805e7d2418e5dc6c42",
+                "url": "https://maven.neoforged.net/releases/org/ow2/asm/asm-util/9.10.1/asm-util-9.10.1.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-analysis:9.10.1",
+              "name": "org.ow2.asm:asm-analysis:9.10.1",
+              "type": "Library",
+              "artifact": {
+                "size": 35140,
+                "MD5": "6dd9011ec87f65e4b2e14e938c4118e4",
+                "url": "https://maven.neoforged.net/releases/org/ow2/asm/asm-analysis/9.10.1/asm-analysis-9.10.1.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-tree:9.10.1",
+              "name": "org.ow2.asm:asm-tree:9.10.1",
+              "type": "Library",
+              "artifact": {
+                "size": 51958,
+                "MD5": "62541e1dc62331408ef31317555bf4fa",
+                "url": "https://maven.neoforged.net/releases/org/ow2/asm/asm-tree/9.10.1/asm-tree-9.10.1.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm:9.10.1",
+              "name": "org.ow2.asm:asm:9.10.1",
+              "type": "Library",
+              "artifact": {
+                "size": 126151,
+                "MD5": "9cb72080438acf27f2607002e1444a7b",
+                "url": "https://maven.neoforged.net/releases/org/ow2/asm/asm/9.10.1/asm-9.10.1.jar"
+              }
+            },
+            {
+              "id": "net.neoforged:JarJarFileSystems:0.4.1",
+              "name": "net.neoforged:JarJarFileSystems:0.4.1",
+              "type": "Library",
+              "artifact": {
+                "size": 31807,
+                "MD5": "8d75021e5aeb04652b4b9ae3df500b9e",
+                "url": "https://maven.neoforged.net/releases/net/neoforged/JarJarFileSystems/0.4.1/JarJarFileSystems-0.4.1.jar"
+              }
+            },
+            {
+              "id": "net.sf.jopt-simple:jopt-simple:5.0.4",
+              "name": "net.sf.jopt-simple:jopt-simple:5.0.4",
+              "type": "Library",
+              "artifact": {
+                "size": 78146,
+                "MD5": "eb0d9dffe9b0eddead68fe678be76c49",
+                "url": "https://libraries.minecraft.net/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar"
+              }
+            },
+            {
+              "id": "org.slf4j:slf4j-api:2.0.9",
+              "name": "org.slf4j:slf4j-api:2.0.9",
+              "type": "Library",
+              "artifact": {
+                "size": 64579,
+                "MD5": "45630e54b0f0ac2b3c80462515ad8fda",
+                "url": "https://libraries.minecraft.net/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar"
+              }
+            },
+            {
+              "id": "org.antlr:antlr4-runtime:4.13.1",
+              "name": "org.antlr:antlr4-runtime:4.13.1",
+              "type": "Library",
+              "artifact": {
+                "size": 326305,
+                "MD5": "dd465ddb2a8dbf69eb6c94e69a0d5f0f",
+                "url": "https://maven.neoforged.net/releases/org/antlr/antlr4-runtime/4.13.1/antlr4-runtime-4.13.1.jar"
+              }
+            },
+            {
+              "id": "com.mojang:logging:1.2.7",
+              "name": "com.mojang:logging:1.2.7",
+              "type": "Library",
+              "artifact": {
+                "size": 15343,
+                "MD5": "d01ea99740509a58222a426cc36f5456",
+                "url": "https://libraries.minecraft.net/com/mojang/logging/1.2.7/logging-1.2.7.jar"
+              }
+            },
+            {
+              "id": "org.apache.logging.log4j:log4j-slf4j2-impl:2.22.1",
+              "name": "org.apache.logging.log4j:log4j-slf4j2-impl:2.22.1",
+              "type": "Library",
+              "artifact": {
+                "size": 27364,
+                "MD5": "82cc94f378ffb853efe084ee9bf4c463",
+                "url": "https://libraries.minecraft.net/org/apache/logging/log4j/log4j-slf4j2-impl/2.22.1/log4j-slf4j2-impl-2.22.1.jar"
+              }
+            },
+            {
+              "id": "org.apache.logging.log4j:log4j-core:2.22.1",
+              "name": "org.apache.logging.log4j:log4j-core:2.22.1",
+              "type": "Library",
+              "artifact": {
+                "size": 1900022,
+                "MD5": "b5987ee449d4be4244e2e214683c45af",
+                "url": "https://libraries.minecraft.net/org/apache/logging/log4j/log4j-core/2.22.1/log4j-core-2.22.1.jar"
+              }
+            },
+            {
+              "id": "org.apache.logging.log4j:log4j-api:2.22.1",
+              "name": "org.apache.logging.log4j:log4j-api:2.22.1",
+              "type": "Library",
+              "artifact": {
+                "size": 335001,
+                "MD5": "27db0eb89ae965179480df00d8d1cf03",
+                "url": "https://libraries.minecraft.net/org/apache/logging/log4j/log4j-api/2.22.1/log4j-api-2.22.1.jar"
+              }
+            },
+            {
+              "id": "org.jline:jline-reader:3.20.0",
+              "name": "org.jline:jline-reader:3.20.0",
+              "type": "Library",
+              "artifact": {
+                "size": 171052,
+                "MD5": "9ece57ca56a1688d1d09fe2c48e7a292",
+                "url": "https://maven.neoforged.net/releases/org/jline/jline-reader/3.20.0/jline-reader-3.20.0.jar"
+              }
+            },
+            {
+              "id": "org.jline:jline-terminal:3.20.0",
+              "name": "org.jline:jline-terminal:3.20.0",
+              "type": "Library",
+              "artifact": {
+                "size": 228481,
+                "MD5": "e45dace437743e6b5e75c81eb455fd3e",
+                "url": "https://maven.neoforged.net/releases/org/jline/jline-terminal/3.20.0/jline-terminal-3.20.0.jar"
+              }
+            },
+            {
+              "id": "commons-io:commons-io:2.15.1",
+              "name": "commons-io:commons-io:2.15.1",
+              "type": "Library",
+              "artifact": {
+                "size": 501218,
+                "MD5": "84351f7991a0e6722f00e96a4ccc376f",
+                "url": "https://libraries.minecraft.net/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:srgutils:0.4.15",
+              "name": "net.minecraftforge:srgutils:0.4.15",
+              "type": "Library",
+              "artifact": {
+                "size": 69393,
+                "MD5": "79812fd073afe1c046bc1ea46ad28095",
+                "url": "https://maven.neoforged.net/releases/net/minecraftforge/srgutils/0.4.15/srgutils-0.4.15.jar"
+              }
+            },
+            {
+              "id": "com.google.guava:guava:32.1.2-jre",
+              "name": "com.google.guava:guava:32.1.2-jre",
+              "type": "Library",
+              "artifact": {
+                "size": 3041591,
+                "MD5": "5fe031b3b35ed56182478811a931d617",
+                "url": "https://libraries.minecraft.net/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar"
+              }
+            },
+            {
+              "id": "com.google.guava:failureaccess:1.0.1",
+              "name": "com.google.guava:failureaccess:1.0.1",
+              "type": "Library",
+              "artifact": {
+                "size": 4617,
+                "MD5": "091883993ef5bfa91da01dcc8fc52236",
+                "url": "https://libraries.minecraft.net/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar"
+              }
+            },
+            {
+              "id": "com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava",
+              "name": "com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava",
+              "type": "Library",
+              "artifact": {
+                "size": 2199,
+                "MD5": "d094c22570d65e132c19cea5d352e381",
+                "url": "https://libraries.minecraft.net/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
+              }
+            },
+            {
+              "id": "com.google.code.findbugs:jsr305:3.0.2",
+              "name": "com.google.code.findbugs:jsr305:3.0.2",
+              "type": "Library",
+              "artifact": {
+                "size": 19936,
+                "MD5": "dd83accb899363c32b07d7a1b2e4ce40",
+                "url": "https://libraries.minecraft.net/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar"
+              }
+            },
+            {
+              "id": "org.checkerframework:checker-qual:3.33.0",
+              "name": "org.checkerframework:checker-qual:3.33.0",
+              "type": "Library",
+              "artifact": {
+                "size": 223979,
+                "MD5": "fc9418b779d9d57dcd52197006cbdb9b",
+                "url": "https://libraries.minecraft.net/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar"
+              }
+            },
+            {
+              "id": "com.google.errorprone:error_prone_annotations:2.18.0",
+              "name": "com.google.errorprone:error_prone_annotations:2.18.0",
+              "type": "Library",
+              "artifact": {
+                "size": 16017,
+                "MD5": "64145d0e7fee5a69ed7b84cf402de998",
+                "url": "https://libraries.minecraft.net/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar"
+              }
+            },
+            {
+              "id": "com.google.j2objc:j2objc-annotations:2.8",
+              "name": "com.google.j2objc:j2objc-annotations:2.8",
+              "type": "Library",
+              "artifact": {
+                "size": 9301,
+                "MD5": "c50af69b704dc91050efb98e0dff66d1",
+                "url": "https://libraries.minecraft.net/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar"
+              }
+            },
+            {
+              "id": "com.google.code.gson:gson:2.10.1",
+              "name": "com.google.code.gson:gson:2.10.1",
+              "type": "Library",
+              "artifact": {
+                "size": 283367,
+                "MD5": "df6097815738cb31fc56391553210843",
+                "url": "https://libraries.minecraft.net/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar"
+              }
+            },
+            {
+              "id": "org.codehaus.plexus:plexus-utils:3.3.0",
+              "name": "org.codehaus.plexus:plexus-utils:3.3.0",
+              "type": "Library",
+              "artifact": {
+                "size": 263253,
+                "MD5": "3ae76ff0195ada460d495efe1fb50d17",
+                "url": "https://maven.neoforged.net/releases/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar"
+              }
+            },
+            {
+              "id": "com.machinezoo.noexception:noexception:1.7.1",
+              "name": "com.machinezoo.noexception:noexception:1.7.1",
+              "type": "Library",
+              "artifact": {
+                "size": 250861,
+                "MD5": "fcc3e4df4990088c964f687b62f7c448",
+                "url": "https://maven.neoforged.net/releases/com/machinezoo/noexception/noexception/1.7.1/noexception-1.7.1.jar"
+              }
+            }
+          ]
+        },
+        {
+          "id": "heyodd-mods-architectury-13.0.11-neoforge.jar",
+          "name": "architectury-13.0.11-neoforge.jar",
+          "type": "File",
+          "artifact": {
+            "size": 584734,
+            "MD5": "aefbea361809755c331126bcff6e6d3e",
+            "url": "https://www.curseforge.com/api/v1/mods/419699/files/8492726/download",
+            "path": "mods/architectury-13.0.11-neoforge.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-ferritecore-7.0.3-neoforge.jar",
+          "name": "ferritecore-7.0.3-neoforge.jar",
+          "type": "File",
+          "artifact": {
+            "size": 121559,
+            "MD5": "e0374dac41d6c641903f9e241911e1d3",
+            "url": "https://www.curseforge.com/api/v1/mods/429235/files/7524151/download",
+            "path": "mods/ferritecore-7.0.3-neoforge.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
+          "name": "iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
+          "type": "File",
+          "artifact": {
+            "size": 2540723,
+            "MD5": "6b68276a6718656ec476cfac69dfe013",
+            "url": "https://www.curseforge.com/api/v1/mods/455508/files/8242804/download",
+            "path": "mods/iris-neoforge-1.8.14-beta.1+mc1.21.1.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-mobends-1.21.1-5.4.6-neoforge.jar",
+          "name": "mobends-1.21.1-5.4.6-neoforge.jar",
+          "type": "File",
+          "artifact": {
+            "size": 1476862,
+            "MD5": "7afada41d0d3d4ef640b43d95f12c164",
+            "url": "https://www.curseforge.com/api/v1/mods/1438637/files/8810871/download",
+            "path": "mods/mobends-1.21.1-5.4.6-neoforge.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-modernfix-neoforge-5.27.24+mc1.21.1.jar",
+          "name": "modernfix-neoforge-5.27.24+mc1.21.1.jar",
+          "type": "File",
+          "artifact": {
+            "size": 604333,
+            "MD5": "fc329974db57c6ec176b5a8b51899b3a",
+            "url": "https://www.curseforge.com/api/v1/mods/790626/files/8774737/download",
+            "path": "mods/modernfix-neoforge-5.27.24+mc1.21.1.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+          "name": "MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+          "type": "File",
+          "artifact": {
+            "size": 73938,
+            "MD5": "4ab6e808a59fdebecfbc92438b85b470",
+            "url": "https://www.curseforge.com/api/v1/mods/60089/files/5637846/download",
+            "path": "mods/MouseTweaks-neoforge-mc1.21-2.26.1.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-ok_zoomer-neo-10.0.0-beta.13.jar",
+          "name": "ok_zoomer-neo-10.0.0-beta.13.jar",
+          "type": "File",
+          "artifact": {
+            "size": 208085,
+            "MD5": "0c45ab8fea64538fd00e7a06c96bf4af",
+            "url": "https://www.curseforge.com/api/v1/mods/354047/files/7676612/download",
+            "path": "mods/ok_zoomer-neo-10.0.0-beta.13.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-sodium-neoforge-0.8.13+mc1.21.1.jar",
+          "name": "sodium-neoforge-0.8.13+mc1.21.1.jar",
+          "type": "File",
+          "artifact": {
+            "size": 1292934,
+            "MD5": "c2bc7287841c29e25ce553baae1700a0",
+            "url": "https://www.curseforge.com/api/v1/mods/394468/files/8756580/download",
+            "path": "mods/sodium-neoforge-0.8.13+mc1.21.1.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-xaerominimap-neoforge-1.21.1-26.4.2.jar",
+          "name": "xaerominimap-neoforge-1.21.1-26.4.2.jar",
+          "type": "File",
+          "artifact": {
+            "size": 2185409,
+            "MD5": "17eff3fe469527971f1f05990f3527f8",
+            "url": "https://www.curseforge.com/api/v1/mods/263420/files/8449819/download",
+            "path": "mods/xaerominimap-neoforge-1.21.1-26.4.2.jar"
+          }
+        },
+        {
+          "id": "heyodd-shaderpacks-ComplementaryReimagined_r5.9.zip",
+          "name": "ComplementaryReimagined_r5.9.zip",
+          "type": "File",
+          "artifact": {
+            "size": 552449,
+            "MD5": "77ab6a3bfda4c9dda97d0bf3a80eaf08",
+            "url": "https://www.curseforge.com/api/v1/mods/627557/files/8791766/download",
+            "path": "shaderpacks/ComplementaryReimagined_r5.9.zip"
+          }
+        },
+        {
+          "id": "heyodd-config-config-fabric-indigo-renderer.properties",
+          "name": "config/fabric/indigo-renderer.properties",
+          "type": "File",
+          "artifact": {
+            "size": 290,
+            "MD5": "bf23838803f7d7e01e6fe774fa4e3382",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/fabric/indigo-renderer.properties",
+            "path": "config/fabric/indigo-renderer.properties"
+          }
+        },
+        {
+          "id": "heyodd-config-config-ferritecore-mixin.toml",
+          "name": "config/ferritecore-mixin.toml",
+          "type": "File",
+          "artifact": {
+            "size": 1603,
+            "MD5": "1273149165ad75919e7f3234a993d101",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/ferritecore-mixin.toml",
+            "path": "config/ferritecore-mixin.toml"
+          }
+        },
+        {
+          "id": "heyodd-config-config-fml.toml",
+          "name": "config/fml.toml",
+          "type": "File",
+          "artifact": {
+            "size": 1550,
+            "MD5": "61a62e6a2b5b00f324065233e76b9a64",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/fml.toml",
+            "path": "config/fml.toml"
+          }
+        },
+        {
+          "id": "heyodd-config-config-iris-excluded.json",
+          "name": "config/iris-excluded.json",
+          "type": "File",
+          "artifact": {
+            "size": 31,
+            "MD5": "670592b1394f12ab96d8432f14ac8dd9",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/iris-excluded.json",
+            "path": "config/iris-excluded.json"
+          }
+        },
+        {
+          "id": "heyodd-config-config-iris.properties",
+          "name": "config/iris.properties",
+          "type": "File",
+          "artifact": {
+            "size": 313,
+            "MD5": "c5213a0bb50581f529f5534837211fbe",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/iris.properties",
+            "path": "config/iris.properties"
+          }
+        },
+        {
+          "id": "heyodd-config-config-koreanpatch.json5",
+          "name": "config/koreanpatch.json5",
+          "type": "File",
+          "artifact": {
+            "size": 1513,
+            "MD5": "db57d63145cae2aa9d67e8b160151008",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/koreanpatch.json5",
+            "path": "config/koreanpatch.json5"
+          }
+        },
+        {
+          "id": "heyodd-config-config-mobends-client.toml",
+          "name": "config/mobends-client.toml",
+          "type": "File",
+          "artifact": {
+            "size": 774,
+            "MD5": "ddc2d89333261a3c76678678c9e8e2b6",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/mobends-client.toml",
+            "path": "config/mobends-client.toml"
+          }
+        },
+        {
+          "id": "heyodd-config-config-modernfix-common.toml",
+          "name": "config/modernfix-common.toml",
+          "type": "File",
+          "artifact": {
+            "size": 105,
+            "MD5": "40e1cfe891a1355f22e5c07591f8943e",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/modernfix-common.toml",
+            "path": "config/modernfix-common.toml"
+          }
+        },
+        {
+          "id": "heyodd-config-config-modernfix-mixins.properties",
+          "name": "config/modernfix-mixins.properties",
+          "type": "File",
+          "artifact": {
+            "size": 5491,
+            "MD5": "29d6c9a4f028f431bf303c62247e9d72",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/modernfix-mixins.properties",
+            "path": "config/modernfix-mixins.properties"
+          }
+        },
+        {
+          "id": "heyodd-config-config-MouseTweaks.cfg",
+          "name": "config/MouseTweaks.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 135,
+            "MD5": "ff577ca09e989c07c056c7cdff465be3",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/MouseTweaks.cfg",
+            "path": "config/MouseTweaks.cfg"
+          }
+        },
+        {
+          "id": "heyodd-config-config-neoforge-client.toml",
+          "name": "config/neoforge-client.toml",
+          "type": "File",
+          "artifact": {
+            "size": 578,
+            "MD5": "7f81c16ea3d467da83df18250f772149",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/neoforge-client.toml",
+            "path": "config/neoforge-client.toml"
+          }
+        },
+        {
+          "id": "heyodd-config-config-neoforge-common.toml",
+          "name": "config/neoforge-common.toml",
+          "type": "File",
+          "artifact": {
+            "size": 772,
+            "MD5": "914110a675baa858ef6725e3f56e513c",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/neoforge-common.toml",
+            "path": "config/neoforge-common.toml"
+          }
+        },
+        {
+          "id": "heyodd-config-config-ok_zoomer-config.json5",
+          "name": "config/ok_zoomer/config.json5",
+          "type": "File",
+          "artifact": {
+            "size": 7330,
+            "MD5": "701e0531a4ab704b6e4c42ce2f3e6517",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/ok_zoomer/config.json5",
+            "path": "config/ok_zoomer/config.json5"
+          }
+        },
+        {
+          "id": "heyodd-config-config-sodium-fingerprint.json",
+          "name": "config/sodium-fingerprint.json",
+          "type": "File",
+          "artifact": {
+            "size": 427,
+            "MD5": "9d771d29cbfe5b77ed64ebbba11568ee",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/sodium-fingerprint.json",
+            "path": "config/sodium-fingerprint.json"
+          }
+        },
+        {
+          "id": "heyodd-config-config-sodium-mixins.properties",
+          "name": "config/sodium-mixins.properties",
+          "type": "File",
+          "artifact": {
+            "size": 258,
+            "MD5": "a5b6a84e034d60be869ae33f2dba4e2b",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/sodium-mixins.properties",
+            "path": "config/sodium-mixins.properties"
+          }
+        },
+        {
+          "id": "heyodd-config-config-sodium-options.json",
+          "name": "config/sodium-options.json",
+          "type": "File",
+          "artifact": {
+            "size": 761,
+            "MD5": "5908c4ab41fc8f2e2ef4c314b7af78b6",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/sodium-options.json",
+            "path": "config/sodium-options.json"
+          }
+        },
+        {
+          "id": "heyodd-config-config-xaero-lib-client.cfg",
+          "name": "config/xaero/lib/client.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 26,
+            "MD5": "dd7d24d2b991f7648671c16d0a74c265",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/xaero/lib/client.cfg",
+            "path": "config/xaero/lib/client.cfg"
+          }
+        },
+        {
+          "id": "heyodd-config-config-xaero-lib-common.cfg",
+          "name": "config/xaero/lib/common.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 236,
+            "MD5": "e085e122e32132e1fa73ac927f7ece81",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/xaero/lib/common.cfg",
+            "path": "config/xaero/lib/common.cfg"
+          }
+        },
+        {
+          "id": "heyodd-config-config-xaero-lib-profiles-default.cfg",
+          "name": "config/xaero/lib/profiles/default.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 121,
+            "MD5": "e6a2491cfa99c4163942c19eb7b4c489",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/xaero/lib/profiles/default.cfg",
+            "path": "config/xaero/lib/profiles/default.cfg"
+          }
+        },
+        {
+          "id": "heyodd-config-config-xaero-lib-server_profiles-default.cfg",
+          "name": "config/xaero/lib/server_profiles/default.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 75,
+            "MD5": "a7ba1c4e531ad6afe1fa89e86f7dfd6f",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/xaero/lib/server_profiles/default.cfg",
+            "path": "config/xaero/lib/server_profiles/default.cfg"
+          }
+        },
+        {
+          "id": "heyodd-config-config-xaero-minimap-client.cfg",
+          "name": "config/xaero/minimap/client.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 235,
+            "MD5": "7a8d5e6353c7471f6002052f1fbd71bb",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/xaero/minimap/client.cfg",
+            "path": "config/xaero/minimap/client.cfg"
+          }
+        },
+        {
+          "id": "heyodd-config-config-xaero-minimap-common.cfg",
+          "name": "config/xaero/minimap/common.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 147,
+            "MD5": "48d56532be92f58e976a2d1753abdd35",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/xaero/minimap/common.cfg",
+            "path": "config/xaero/minimap/common.cfg"
+          }
+        },
+        {
+          "id": "heyodd-config-config-xaero-minimap-default_radar_categories_client.json",
+          "name": "config/xaero/minimap/default_radar_categories_client.json",
+          "type": "File",
+          "artifact": {
+            "size": 5531,
+            "MD5": "f502ebf28f0487b5ed32affdc6041b85",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/xaero/minimap/default_radar_categories_client.json",
+            "path": "config/xaero/minimap/default_radar_categories_client.json"
+          }
+        },
+        {
+          "id": "heyodd-config-config-xaero-minimap-default_radar_categories_server.json",
+          "name": "config/xaero/minimap/default_radar_categories_server.json",
+          "type": "File",
+          "artifact": {
+            "size": 4597,
+            "MD5": "7ffe568a308241b93166af2d45ce79c7",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/xaero/minimap/default_radar_categories_server.json",
+            "path": "config/xaero/minimap/default_radar_categories_server.json"
+          }
+        },
+        {
+          "id": "heyodd-config-config-xaero-minimap-profiles-default.cfg",
+          "name": "config/xaero/minimap/profiles/default.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 3825,
+            "MD5": "39b36f582769dd7ea8222f60f7059302",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/xaero/minimap/profiles/default.cfg",
+            "path": "config/xaero/minimap/profiles/default.cfg"
+          }
+        },
+        {
+          "id": "heyodd-config-config-xaero-minimap-profiles-info_display_config-default.cfg.txt",
+          "name": "config/xaero/minimap/profiles/info_display_config/default.cfg.txt",
+          "type": "File",
+          "artifact": {
+            "size": 684,
+            "MD5": "64d98932063f0be723920fbdb1de1268",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/xaero/minimap/profiles/info_display_config/default.cfg.txt",
+            "path": "config/xaero/minimap/profiles/info_display_config/default.cfg.txt"
+          }
+        },
+        {
+          "id": "heyodd-config-config-xaero-minimap-server_profiles-default.cfg",
+          "name": "config/xaero/minimap/server_profiles/default.cfg",
+          "type": "File",
+          "artifact": {
+            "size": 75,
+            "MD5": "a7ba1c4e531ad6afe1fa89e86f7dfd6f",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/xaero/minimap/server_profiles/default.cfg",
+            "path": "config/xaero/minimap/server_profiles/default.cfg"
+          }
+        },
+        {
+          "id": "heyodd-config-config-xaerohud.txt",
+          "name": "config/xaerohud.txt",
+          "type": "File",
+          "artifact": {
+            "size": 123,
+            "MD5": "2f87c54b0b2e85e6a5031171284d6f31",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/xaerohud.txt",
+            "path": "config/xaerohud.txt"
+          }
+        },
+        {
+          "id": "heyodd-config-config-xaeropatreon.txt",
+          "name": "config/xaeropatreon.txt",
+          "type": "File",
+          "artifact": {
+            "size": 0,
+            "MD5": "d41d8cd98f00b204e9800998ecf8427e",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/xaeropatreon.txt",
+            "path": "config/xaeropatreon.txt"
+          }
+        },
+        {
+          "id": "heyodd-config-options.txt",
+          "name": "options.txt",
+          "type": "File",
+          "artifact": {
+            "size": 5288,
+            "MD5": "df75c732a25a78450cd8d01b3280b147",
+            "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/options.txt",
+            "path": "options.txt"
+          }
+        }
+      ]
     }
   ]
 }
