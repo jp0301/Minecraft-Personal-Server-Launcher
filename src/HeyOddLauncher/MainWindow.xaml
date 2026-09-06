@@ -1,0 +1,45 @@
+<Window x:Class="HeyOddLauncher.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="영무예다음 Minecraft Launcher" Width="1280" Height="760" MinWidth="1040" MinHeight="650" WindowStartupLocation="CenterScreen" Background="#111411" Foreground="White">
+  <Window.Resources>
+    <SolidColorBrush x:Key="Green" Color="#58C968"/><SolidColorBrush x:Key="Panel" Color="#E51A1D18"/>
+    <Style x:Key="MetaChip" TargetType="Border"><Setter Property="Background" Value="#B80B0E0C"/><Setter Property="CornerRadius" Value="6"/><Setter Property="Padding" Value="11,7"/><Setter Property="Margin" Value="0,0,8,0"/></Style>
+    <Style x:Key="Tag" TargetType="Border"><Setter Property="Background" Value="#273D2A"/><Setter Property="CornerRadius" Value="5"/><Setter Property="Padding" Value="7,3"/><Setter Property="HorizontalAlignment" Value="Left"/></Style>
+    <Style x:Key="NoticeRow" TargetType="Border"><Setter Property="BorderBrush" Value="#30352F"/><Setter Property="BorderThickness" Value="0,0,0,1"/><Setter Property="Padding" Value="18,13"/></Style>
+  </Window.Resources>
+  <Grid>
+    <Grid.Background><ImageBrush ImageSource="Assets/yeongmu-yedaeum-bg.png" Stretch="UniformToFill"/></Grid.Background>
+    <Grid><Grid.Background><LinearGradientBrush StartPoint="0,0" EndPoint="1,0"><GradientStop Color="#B70A110E"/><GradientStop Color="#3A0A110E" Offset="0.55"/><GradientStop Color="#76070A08" Offset="1"/></LinearGradientBrush></Grid.Background></Grid>
+    <Border VerticalAlignment="Bottom" Height="310"><Border.Background><LinearGradientBrush StartPoint="0,1" EndPoint="0,0"><GradientStop Color="#D9070A08"/><GradientStop Color="#00070A08" Offset="1"/></LinearGradientBrush></Border.Background></Border>
+    <Grid Margin="44,36,44,38">
+      <Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="32"/><ColumnDefinition Width="390"/></Grid.ColumnDefinitions>
+      <Grid Grid.Column="0">
+        <Grid.RowDefinitions><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+        <StackPanel Grid.Row="1" Margin="0,0,0,4" MaxWidth="690" HorizontalAlignment="Left">
+          <TextBlock Text="영무예다음" FontSize="64" FontWeight="Black"/>
+          <TextBlock Text="우리 동네에서 시작되는 친구들의 Vanilla+ Minecraft 서버" FontSize="17" FontWeight="SemiBold" Margin="2,9,0,0"/>
+          <TextBlock Text="가볍게 즐기는 탐험·건축·생존 — 복잡한 설치 없이 바로 접속하세요." FontSize="15" Foreground="#E0E5E1" Margin="2,5,0,18"/>
+          <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
+            <Border Style="{StaticResource MetaChip}"><StackPanel Orientation="Horizontal"><TextBlock Text="PACK  " Foreground="#808A83"/><TextBlock x:Name="VersionText" Text="설치되지 않음" FontWeight="SemiBold"/></StackPanel></Border>
+            <Border Style="{StaticResource MetaChip}"><StackPanel Orientation="Horizontal"><TextBlock Text="서버  " Foreground="#808A83"/><Ellipse Width="7" Height="7" Fill="{StaticResource Green}" Margin="0,0,7,0"/><TextBlock Text="heyodd.iptime.org" FontWeight="SemiBold"/></StackPanel></Border>
+          </StackPanel>
+          <Grid>
+            <Grid.ColumnDefinitions><ColumnDefinition Width="275"/><ColumnDefinition Width="10"/><ColumnDefinition Width="54"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+            <Button Grid.Column="0" x:Name="PlayButton" Click="Play_Click" Height="60" Background="{StaticResource Green}" Foreground="White" FontSize="19" FontWeight="Bold" BorderThickness="0" Cursor="Hand"><StackPanel Orientation="Horizontal" HorizontalAlignment="Center"><TextBlock Text="▶" FontSize="15" Margin="0,1,12,0"/><TextBlock Text="게임 시작"/></StackPanel></Button>
+            <Button Grid.Column="2" Height="60" Background="#D7131714" Foreground="White" BorderBrush="#40463F" BorderThickness="1" FontSize="22" Content="⚙" Cursor="Hand"/>
+          </Grid>
+          <ProgressBar x:Name="InstallProgress" Height="4" Margin="0,12,0,0" Minimum="0" Maximum="100" Foreground="{StaticResource Green}" Background="#394039"/>
+          <TextBlock x:Name="StatusText" Text="처음 실행하면 필요한 파일을 자동으로 준비합니다." Foreground="#B9C1BB" FontSize="13" Margin="2,9,0,0" TextWrapping="Wrap"/>
+          <Grid Margin="2,17,0,0"><Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions><TextBlock x:Name="AccountText" Text="Microsoft 계정 로그인이 필요합니다" Foreground="#B9C1BB" VerticalAlignment="Center"/><Button Grid.Column="1" x:Name="LoginButton" Click="Login_Click" Content="Microsoft 계정 로그인" Background="Transparent" Foreground="#DDE4DF" BorderBrush="#657067" BorderThickness="1" Padding="14,7"/></Grid>
+        </StackPanel>
+      </Grid>
+      <StackPanel Grid.Column="2" VerticalAlignment="Center">
+        <Border Background="{StaticResource Panel}" CornerRadius="13" Padding="21,17" Margin="0,0,0,12"><Border.Effect><DropShadowEffect BlurRadius="22" ShadowDepth="5" Opacity="0.35"/></Border.Effect><Grid><Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/></Grid.RowDefinitions><StackPanel Orientation="Horizontal"><Ellipse Width="8" Height="8" Fill="{StaticResource Green}" Margin="0,0,9,0"/><TextBlock Text="서버 상태" Foreground="{StaticResource Green}" FontWeight="SemiBold"/></StackPanel><Grid Grid.Row="1" Margin="0,10,0,0"><TextBlock x:Name="Headline" Text="연결 준비 완료" FontSize="27" FontWeight="Bold"/><TextBlock Text="Minecraft 1.21.1" Foreground="#9EA69F" HorizontalAlignment="Right" VerticalAlignment="Bottom"/></Grid></Grid></Border>
+        <Border Background="{StaticResource Panel}" CornerRadius="13" ClipToBounds="True"><Border.Effect><DropShadowEffect BlurRadius="22" ShadowDepth="5" Opacity="0.35"/></Border.Effect><StackPanel>
+          <TextBlock Text="공지사항" FontSize="15" FontWeight="SemiBold" Margin="20,17,20,12"/>
+          <Border Style="{StaticResource NoticeRow}"><StackPanel><Border Style="{StaticResource Tag}"><TextBlock Text="업데이트" Foreground="#7FE18C" FontSize="12"/></Border><TextBlock Text="영무예다음 런처 1.0 공개" FontSize="15" FontWeight="SemiBold" Margin="0,8,0,0"/><TextBlock Text="전용 팩 자동 설치와 업데이트 지원" Foreground="#929A93" FontSize="12" Margin="0,4,0,0"/></StackPanel></Border>
+          <Border Style="{StaticResource NoticeRow}"><StackPanel><Border Style="{StaticResource Tag}"><TextBlock Text="안내" Foreground="#7FE18C" FontSize="12"/></Border><TextBlock Text="Microsoft 정품 계정이 필요합니다" FontSize="15" FontWeight="SemiBold" Margin="0,8,0,0"/><TextBlock Text="로그인 정보는 런처가 직접 저장하지 않습니다" Foreground="#929A93" FontSize="12" Margin="0,4,0,0"/></StackPanel></Border>
+          <Border Padding="18,13"><StackPanel><Border Style="{StaticResource Tag}"><TextBlock Text="서버" Foreground="#7FE18C" FontSize="12"/></Border><TextBlock Text="heyodd.iptime.org" FontSize="15" FontWeight="SemiBold" Margin="0,8,0,0"/><TextBlock Text="PLAY 버튼으로 자동 접속" Foreground="#929A93" FontSize="12" Margin="0,4,0,0"/></StackPanel></Border>
+        </StackPanel></Border>
+      </StackPanel>
+    </Grid>
+  </Grid>
+</Window>

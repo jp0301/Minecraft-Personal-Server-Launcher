@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "packVersion": "1.0.0",
+  "minecraft": "1.21.1",
+  "neoForge": "21.1.249",
+  "server": "heyodd.iptime.org",
+  "files": [
+    {
+      "path": "mods/example.jar",
+      "url": "https://downloads.example.com/heyodd/1.0.0/mods/example.jar",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "size": 0,
+      "mutable": false
+    }
+  ]
+}

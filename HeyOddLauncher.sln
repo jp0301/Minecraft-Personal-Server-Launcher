@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeyOddLauncher", "src\HeyOddLauncher\HeyOddLauncher.csproj", "{56990908-76C3-47A8-9B04-508F037F96A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeyOddLauncher.Core", "src\HeyOddLauncher.Core\HeyOddLauncher.Core.csproj", "{B8779E23-BD4A-4FF8-BA87-BB946175B90A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56990908-76C3-47A8-9B04-508F037F96A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56990908-76C3-47A8-9B04-508F037F96A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56990908-76C3-47A8-9B04-508F037F96A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56990908-76C3-47A8-9B04-508F037F96A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8779E23-BD4A-4FF8-BA87-BB946175B90A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8779E23-BD4A-4FF8-BA87-BB946175B90A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8779E23-BD4A-4FF8-BA87-BB946175B90A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8779E23-BD4A-4FF8-BA87-BB946175B90A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
