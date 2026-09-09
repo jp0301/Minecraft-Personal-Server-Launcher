@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "packVersion": "1.0.1",
+  "packVersion": "1.0.2",
   "minecraft": "1.21.1",
   "neoForge": "21.1.249",
   "server": "heyodd.iptime.org",
@@ -12,7 +12,7 @@
     { "path": "mods/modernfix-neoforge-5.27.24+mc1.21.1.jar", "url": "https://www.curseforge.com/api/v1/mods/790626/files/8774737/download", "sha256": "e6e9446890f0feb3aab3f6e73ae18cb17575c370f232179fef7baa30e61538fe", "size": 604333 },
     { "path": "mods/MouseTweaks-neoforge-mc1.21-2.26.1.jar", "url": "https://www.curseforge.com/api/v1/mods/60089/files/5637846/download", "sha256": "68e6f4201c5de97b77929a7215c9552495696ca6a3bf3ae4eacc34e135f6cc8b", "size": 73938 },
     { "path": "mods/ok_zoomer-neo-10.0.0-beta.13.jar", "url": "https://www.curseforge.com/api/v1/mods/354047/files/7676612/download", "sha256": "61da322358127329d40b36a028faa7d91c370a3708e08becf1f1b8b242c5eb61", "size": 208085 },
-    { "path": "mods/PuzzlesLib-v21.1.52-1.21.1-NeoForge.jar", "url": "https://cdn.modrinth.com/data/QAGBst4M/versions/5A6wiMVf/PuzzlesLib-v21.1.52-1.21.1-NeoForge.jar", "sha256": "00069866c4c6bb67ee5192d1b425d46e6a1601dc598e61bd10b67ba5fa8b029c", "size": 1425176 },
+    { "path": "mods/PuzzlesLib-v21.1.60-mc1.21.1-NeoForge.jar", "url": "https://cdn.modrinth.com/data/QAGBst4M/versions/lh44g7RC/PuzzlesLib-v21.1.60-mc1.21.1-NeoForge.jar", "sha256": "179bcaafb812618834ba82e7f29b15eaee8894f74fb96152a51cfc22ad4f45c4", "size": 1442182 },
     { "path": "mods/sodium-neoforge-0.8.13+mc1.21.1.jar", "url": "https://www.curseforge.com/api/v1/mods/394468/files/8756580/download", "sha256": "575d187b15328d7bddd8a9b1bee64333c22c14735f5780ec49eac0cd5503c08d", "size": 1292934 },
     { "path": "mods/xaerominimap-neoforge-1.21.1-26.4.2.jar", "url": "https://www.curseforge.com/api/v1/mods/263420/files/8449819/download", "sha256": "b722bcf794288f0ed51165cd1f057fc4505e20abbc723b2e17e900426e443603", "size": 2185409 },
     { "path": "shaderpacks/ComplementaryReimagined_r5.9.zip", "url": "https://www.curseforge.com/api/v1/mods/627557/files/8791766/download", "sha256": "46ed277127f04bac69af03effa897815bd20af959023784fa12a003d31425dfe", "size": 552449 }

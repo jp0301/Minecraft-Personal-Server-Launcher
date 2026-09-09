@@ -24,7 +24,7 @@
 - NeoForge 21.1.249 배포 구성 및 필수 라이브러리 연결 완료
 - Vanilla+ 모드, 설정, 셰이더 자동 설치 구성 완료
 - 로그인 전 `로그인 없이 게임 파일 설치` 기능 완료
-- EasyMagic 필수 의존성 Puzzles Lib 21.1.52 포함
+- EasyMagic 필수 의존성 Puzzles Lib 21.1.60 포함
 - Windows x64 설치 프로그램 생성 확인
 
 Minecraft Services에서 신규 앱 ID 승인이 완료되기 전에는 Microsoft 로그인 마지막 단계에서 HTTP 403이 발생할 수 있습니다.
