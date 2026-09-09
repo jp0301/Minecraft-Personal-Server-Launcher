@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.2.1",
   "rss": "",
   "servers": [
     {
@@ -7,7 +7,7 @@
       "name": "영무예다음",
       "description": "충북혁신도시 영무예다음 친구들을 위한 Vanilla+ Minecraft 서버",
       "icon": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/server-icon.png",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "address": "heyodd.iptime.org",
       "minecraftVersion": "1.21.1",
       "javaOptions": {
@@ -599,6 +599,17 @@
             "MD5": "0c45ab8fea64538fd00e7a06c96bf4af",
             "url": "https://www.curseforge.com/api/v1/mods/354047/files/7676612/download",
             "path": "mods/ok_zoomer-neo-10.0.0-beta.13.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-PuzzlesLib-v21.1.52-1.21.1-NeoForge.jar",
+          "name": "PuzzlesLib-v21.1.52-1.21.1-NeoForge.jar",
+          "type": "File",
+          "artifact": {
+            "size": 1425176,
+            "MD5": "4ee80ed6cebef297e3c5a82cf7db559f",
+            "url": "https://cdn.modrinth.com/data/QAGBst4M/versions/5A6wiMVf/PuzzlesLib-v21.1.52-1.21.1-NeoForge.jar",
+            "path": "mods/PuzzlesLib-v21.1.52-1.21.1-NeoForge.jar"
           }
         },
         {

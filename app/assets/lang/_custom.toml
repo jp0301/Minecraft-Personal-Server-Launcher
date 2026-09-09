@@ -1,0 +1,23 @@
+# Custom Language File for Launcher Customizer
+
+[ejs.app]
+title = "영무예다음 Minecraft Launcher"
+
+[ejs.landing]
+mediaHomeURL = "https://github.com/jp0301/Minecraft-Personal-Server-Launcher"
+mediaLinkURL = "#"
+mediaMapURL = "#"
+mediaGitHubURL = "https://github.com/jp0301/Minecraft-Personal-Server-Launcher"
+mediaXURL = "#"
+mediaInstagramURL = "#"
+mediaYouTubeURL = "#"
+mediaDiscordURL = "#"
+
+[ejs.settings]
+sourceGithubLink = "https://github.com/jp0301/Minecraft-Personal-Server-Launcher"
+supportLink = "https://github.com/jp0301/Minecraft-Personal-Server-Launcher/issues"
+
+[ejs.welcome]
+welcomeHeader = "영무예다음"
+welcomeDescription = "충북혁신도시 영무예다음 친구들을 위한 비상업적 Minecraft Java 서버 전용 런처입니다. 정식 Microsoft 계정으로 로그인하면 Minecraft 1.21.1, NeoForge와 서버에 필요한 Vanilla+ 구성을 자동으로 준비합니다."
+welcomeDescCTA = "복잡한 설치 없이, 함께 즐기는 우리만의 Minecraft 서버"

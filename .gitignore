@@ -1,10 +1,6 @@
-bin/
-obj/
-.vs/
-artifacts/
-publish/
-dist/
-*.user
-*.pdb
-secrets.json
-manifest.local.json
+/node_modules/
+/.vs/
+/.vscode/
+/target/
+/logs/
+/dist/
