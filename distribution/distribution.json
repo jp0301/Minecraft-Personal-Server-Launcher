@@ -1,5 +1,5 @@
 {
-  "version": "0.2.4",
+  "version": "0.2.5",
   "rss": "",
   "servers": [
     {
@@ -7,11 +7,11 @@
       "name": "영무예다음",
       "description": "충북혁신도시 영무예다음 친구들을 위한 Vanilla+ Minecraft 서버",
       "icon": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/server-icon.png",
-      "version": "0.2.4",
+      "version": "0.2.5",
       "address": "heyodd.iptime.org",
       "minecraftVersion": "1.21.1",
       "javaOptions": {
-        "supported": ">=21.x",
+        "supported": "21.x",
         "suggestedMajor": 21,
         "distribution": "TEMURIN",
         "ram": {
@@ -23,7 +23,7 @@
       "autoconnect": true,
       "modules": [
         {
-          "id": "net.neoforged:neoforge:21.1.249:client",
+          "id": "net.neoforged:neoforge:21.1.249",
           "name": "NeoForge 21.1.249",
           "type": "ForgeHosted",
           "artifact": {

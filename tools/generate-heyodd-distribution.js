@@ -83,18 +83,18 @@ const instanceModules = fs.existsSync(instanceRoot) ? walk(instanceRoot).map(fil
 
 const versionArtifact = artifact(versionOutput, `${repoRaw}/neoforge/${versionId}.json`)
 const distribution = {
-    version: '0.2.4',
+    version: '0.2.5',
     rss: '',
     servers: [{
         id: 'heyodd-1.21.1',
         name: '영무예다음',
         description: '충북혁신도시 영무예다음 친구들을 위한 Vanilla+ Minecraft 서버',
         icon: `${repoRaw}/server-icon.png`,
-        version: '0.2.4',
+        version: '0.2.5',
         address: 'heyodd.iptime.org',
         minecraftVersion: '1.21.1',
         javaOptions: {
-            supported: '>=21.x',
+            supported: '21.x',
             suggestedMajor: 21,
             distribution: 'TEMURIN',
             ram: { recommended: 6144, minimum: 4096 }
@@ -102,7 +102,7 @@ const distribution = {
         mainServer: true,
         autoconnect: true,
         modules: [{
-            id: `net.neoforged:neoforge:${neoForgeVersion}:client`,
+            id: `net.neoforged:neoforge:${neoForgeVersion}`,
             name: `NeoForge ${neoForgeVersion}`,
             type: 'ForgeHosted',
             // The patched client JAR is generated locally by the official NeoForge installer.
