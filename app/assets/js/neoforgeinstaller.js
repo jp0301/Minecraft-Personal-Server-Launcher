@@ -10,7 +10,12 @@ const INSTALLER_SHA1 = 'd94d4445a3dda42e7dd54f5c7f789aa78c822074'
 const INSTALLER_URL = `https://maven.neoforged.net/releases/net/neoforged/neoforge/${NEOFORGE_VERSION}/neoforge-${NEOFORGE_VERSION}-installer.jar`
 
 function neoForgeClientPath(commonDir) {
-    return path.join(commonDir, 'libraries', 'net', 'neoforged', 'neoforge', NEOFORGE_VERSION, `neoforge-${NEOFORGE_VERSION}-client.jar`)
+    const versionId = `neoforge-${NEOFORGE_VERSION}`
+    return path.join(commonDir, 'versions', versionId, `${versionId}.jar`)
+}
+
+function minecraftClientPath(commonDir, minecraftVersion) {
+    return path.join(commonDir, 'versions', minecraftVersion, `${minecraftVersion}.jar`)
 }
 
 async function downloadMinecraftBase(commonDir, minecraftVersion, onProgress) {
@@ -67,6 +72,12 @@ async function ensureNeoForgeClient({ commonDir, minecraftVersion, javaExecutabl
     onStatus('installing')
     onProgress(0)
     await runInstaller(javaExecutable, installerPath, commonDir, logger)
+
+    // Mojang's launcher supplies the inherited Minecraft client JAR under the
+    // NeoForge version name. Helios expects the ForgeHosted module to provide
+    // that same classpath entry, so mirror the already validated base client.
+    await fs.ensureDir(path.dirname(clientPath))
+    await fs.copy(minecraftClientPath(commonDir, minecraftVersion), clientPath, { overwrite: true })
 
     if(!await validateLocalFile(clientPath, HashAlgo.MD5, expectedMD5)) {
         throw new Error('NeoForge client installation completed, but the generated file failed validation.')

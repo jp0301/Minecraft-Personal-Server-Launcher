@@ -20,7 +20,7 @@
     ],
     "jvm": [
       "-Djava.net.preferIPv6Addresses=system",
-      "-DignoreList=client-extra,neoforge-21.1.249-client.jar",
+      "-DignoreList=client-extra,${version_name}.jar",
       "-DlibraryDirectory=${library_directory}",
       "-p",
       "${library_directory}/cpw/mods/bootstraplauncher/2.0.2/bootstraplauncher-2.0.2.jar${classpath_separator}${library_directory}/cpw/mods/securejarhandler/3.0.8/securejarhandler-3.0.8.jar${classpath_separator}${library_directory}/org/ow2/asm/asm-commons/9.10.1/asm-commons-9.10.1.jar${classpath_separator}${library_directory}/org/ow2/asm/asm-util/9.10.1/asm-util-9.10.1.jar${classpath_separator}${library_directory}/org/ow2/asm/asm-analysis/9.10.1/asm-analysis-9.10.1.jar${classpath_separator}${library_directory}/org/ow2/asm/asm-tree/9.10.1/asm-tree-9.10.1.jar${classpath_separator}${library_directory}/org/ow2/asm/asm/9.10.1/asm-9.10.1.jar${classpath_separator}${library_directory}/net/neoforged/JarJarFileSystems/0.4.1/JarJarFileSystems-0.4.1.jar",

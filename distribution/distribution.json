@@ -1,5 +1,5 @@
 {
-  "version": "0.2.6",
+  "version": "0.2.7",
   "rss": "",
   "servers": [
     {
@@ -7,7 +7,7 @@
       "name": "영무예다음",
       "description": "충북혁신도시 영무예다음 친구들을 위한 Vanilla+ Minecraft 서버",
       "icon": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/server-icon.png",
-      "version": "0.2.6",
+      "version": "0.2.7",
       "address": "heyodd.iptime.org",
       "minecraftVersion": "1.21.1",
       "javaOptions": {
@@ -27,9 +27,10 @@
           "name": "NeoForge 21.1.249",
           "type": "ForgeHosted",
           "artifact": {
-            "size": 5675624,
-            "MD5": "0fe7826ecbb207c9be2ffd718828f559",
-            "url": "https://maven.neoforged.net/releases/net/neoforged/neoforge/21.1.249/neoforge-21.1.249-installer.jar"
+            "size": 26836906,
+            "MD5": "0b90a83eb9910468c60152f6594b9271",
+            "url": "https://maven.neoforged.net/releases/net/neoforged/neoforge/21.1.249/neoforge-21.1.249-installer.jar",
+            "path": "../versions/neoforge-21.1.249/neoforge-21.1.249.jar"
           },
           "subModules": [
             {
@@ -47,8 +48,8 @@
               "name": "NeoForge version manifest",
               "type": "VersionManifest",
               "artifact": {
-                "size": 21261,
-                "MD5": "15903250d1e5f35cacf39c63b10f99a1",
+                "size": 21252,
+                "MD5": "600191b929035d2cc1b74842d26c187e",
                 "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/neoforge/neoforge-21.1.249.json"
               }
             },

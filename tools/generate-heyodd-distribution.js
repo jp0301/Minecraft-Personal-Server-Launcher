@@ -24,16 +24,11 @@ const artifact = (file, url, relativePath) => ({
 })
 
 const versionManifest = JSON.parse(fs.readFileSync(versionSource, 'utf8'))
-versionManifest.arguments.jvm = versionManifest.arguments.jvm.map(argument =>
-    argument === '-DignoreList=client-extra,${version_name}.jar'
-        ? `-DignoreList=client-extra,neoforge-${neoForgeVersion}-client.jar`
-        : argument
-)
 fs.mkdirSync(versionOutputDir, { recursive: true })
 fs.writeFileSync(versionOutput, `${JSON.stringify(versionManifest, null, 2)}\n`)
 
 const neoForgeLibraryRoot = path.join(minecraftRoot, 'libraries', 'net', 'neoforged', 'neoforge', neoForgeVersion)
-const clientJar = path.join(neoForgeLibraryRoot, `neoforge-${neoForgeVersion}-client.jar`)
+const clientJar = path.join(minecraftRoot, 'versions', versionId, `${versionId}.jar`)
 const universalJar = path.join(neoForgeLibraryRoot, `neoforge-${neoForgeVersion}-universal.jar`)
 const neoForgeMaven = `https://maven.neoforged.net/releases/net/neoforged/neoforge/${neoForgeVersion}`
 const neoForgeInstallerUrl = `${neoForgeMaven}/neoforge-${neoForgeVersion}-installer.jar`
@@ -86,14 +81,14 @@ const instanceModules = fs.existsSync(instanceRoot) ? walk(instanceRoot).map(fil
 
 const versionArtifact = artifact(versionOutput, `${repoRaw}/neoforge/${versionId}.json`)
 const distribution = {
-    version: '0.2.6',
+    version: '0.2.7',
     rss: '',
     servers: [{
         id: 'heyodd-1.21.1',
         name: '영무예다음',
         description: '충북혁신도시 영무예다음 친구들을 위한 Vanilla+ Minecraft 서버',
         icon: `${repoRaw}/server-icon.png`,
-        version: '0.2.6',
+        version: '0.2.7',
         address: 'heyodd.iptime.org',
         minecraftVersion: '1.21.1',
         javaOptions: {
@@ -108,9 +103,9 @@ const distribution = {
             id: `net.neoforged:neoforge:${neoForgeVersion}:client`,
             name: `NeoForge ${neoForgeVersion}`,
             type: 'ForgeHosted',
-            // The patched client JAR is generated locally by the official NeoForge installer.
-            // The launcher prepares it before Helios validates the distribution.
-            artifact: artifact(clientJar, neoForgeInstallerUrl),
+            // The official launcher exposes the inherited Minecraft client under this
+            // NeoForge version path. The local installer helper mirrors that behavior.
+            artifact: artifact(clientJar, neoForgeInstallerUrl, `../versions/${versionId}/${versionId}.jar`),
             subModules: [{
                 id: `net.neoforged:neoforge:${neoForgeVersion}:universal`,
                 name: 'NeoForge universal',
