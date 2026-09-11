@@ -1,13 +1,15 @@
 {
   "schemaVersion": 1,
-  "packVersion": "1.0.2",
+  "packVersion": "1.0.3",
   "minecraft": "1.21.1",
   "neoForge": "21.1.249",
   "server": "heyodd.iptime.org",
   "files": [
     { "path": "mods/architectury-13.0.11-neoforge.jar", "url": "https://www.curseforge.com/api/v1/mods/419699/files/8492726/download", "sha256": "9cc92f2c09533fc5482c60f993bd891c655a0e32b637037cdcb7c2b23adedeeb", "size": 584734 },
+    { "path": "mods/EasyMagic-v21.1.4-1.21.1-NeoForge.jar", "url": "https://cdn.modrinth.com/data/9hx3AbJM/versions/MxbfrOEv/EasyMagic-v21.1.4-1.21.1-NeoForge.jar", "sha256": "e641a83dcd0dd1a66c545069a706349df94f5b64dc5a252944596439009a699f", "size": 143992 },
     { "path": "mods/ferritecore-7.0.3-neoforge.jar", "url": "https://www.curseforge.com/api/v1/mods/429235/files/7524151/download", "sha256": "d87ea28262715ebff45b8a82d493e6b468e7a4521bc021df5d88302196d030a8", "size": 121559 },
     { "path": "mods/iris-neoforge-1.8.14-beta.1+mc1.21.1.jar", "url": "https://www.curseforge.com/api/v1/mods/455508/files/8242804/download", "sha256": "60d5f8bf52f25e9986440f4a4270a6bd986d9cff994510e1108ac1547063b314", "size": 2540723 },
+    { "path": "mods/koreanpatch-neoforge-1.9.6+mc1.21.jar", "url": "https://cdn.modrinth.com/data/qyulnpBL/versions/CRXd37Zg/koreanpatch-neoforge-1.9.6%2Bmc1.21.jar", "sha256": "0dff16ad9752c7211f39672e3480866bef5e1d7e4a37206525335995cae585af", "size": 373120 },
     { "path": "mods/mobends-1.21.1-5.4.6-neoforge.jar", "url": "https://www.curseforge.com/api/v1/mods/1438637/files/8810871/download", "sha256": "cf50f23002b63468337420adcbb5229952cf6eda18f159687f4f5e3c4309ca15", "size": 1476862 },
     { "path": "mods/modernfix-neoforge-5.27.24+mc1.21.1.jar", "url": "https://www.curseforge.com/api/v1/mods/790626/files/8774737/download", "sha256": "e6e9446890f0feb3aab3f6e73ae18cb17575c370f232179fef7baa30e61538fe", "size": 604333 },
     { "path": "mods/MouseTweaks-neoforge-mc1.21-2.26.1.jar", "url": "https://www.curseforge.com/api/v1/mods/60089/files/5637846/download", "sha256": "68e6f4201c5de97b77929a7215c9552495696ca6a3bf3ae4eacc34e135f6cc8b", "size": 73938 },

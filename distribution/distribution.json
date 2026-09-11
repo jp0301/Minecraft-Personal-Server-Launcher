@@ -1,5 +1,5 @@
 {
-  "version": "0.2.3",
+  "version": "0.2.4",
   "rss": "",
   "servers": [
     {
@@ -7,7 +7,7 @@
       "name": "영무예다음",
       "description": "충북혁신도시 영무예다음 친구들을 위한 Vanilla+ Minecraft 서버",
       "icon": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/server-icon.png",
-      "version": "0.2.3",
+      "version": "0.2.4",
       "address": "heyodd.iptime.org",
       "minecraftVersion": "1.21.1",
       "javaOptions": {
@@ -536,6 +536,17 @@
           }
         },
         {
+          "id": "heyodd-mods-EasyMagic-v21.1.4-1.21.1-NeoForge.jar",
+          "name": "EasyMagic-v21.1.4-1.21.1-NeoForge.jar",
+          "type": "File",
+          "artifact": {
+            "size": 143992,
+            "MD5": "b51766fc730e071db0fb073abfa5beb6",
+            "url": "https://cdn.modrinth.com/data/9hx3AbJM/versions/MxbfrOEv/EasyMagic-v21.1.4-1.21.1-NeoForge.jar",
+            "path": "mods/EasyMagic-v21.1.4-1.21.1-NeoForge.jar"
+          }
+        },
+        {
           "id": "heyodd-mods-ferritecore-7.0.3-neoforge.jar",
           "name": "ferritecore-7.0.3-neoforge.jar",
           "type": "File",
@@ -555,6 +566,17 @@
             "MD5": "6b68276a6718656ec476cfac69dfe013",
             "url": "https://www.curseforge.com/api/v1/mods/455508/files/8242804/download",
             "path": "mods/iris-neoforge-1.8.14-beta.1+mc1.21.1.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-koreanpatch-neoforge-1.9.6+mc1.21.jar",
+          "name": "koreanpatch-neoforge-1.9.6+mc1.21.jar",
+          "type": "File",
+          "artifact": {
+            "size": 373120,
+            "MD5": "873a272de656e908ec77878f3dd0bcb5",
+            "url": "https://cdn.modrinth.com/data/qyulnpBL/versions/CRXd37Zg/koreanpatch-neoforge-1.9.6%2Bmc1.21.jar",
+            "path": "mods/koreanpatch-neoforge-1.9.6+mc1.21.jar"
           }
         },
         {
