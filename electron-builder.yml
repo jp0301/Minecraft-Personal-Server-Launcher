@@ -6,6 +6,7 @@ copyright: 'Copyright © 2018-2026 Daniel Scalzi; Copyright © 2024 peunsu; HeyO
 
 asar: true
 compression: 'maximum'
+afterPack: './tools/after-pack.cjs'
 
 files:
   - '!{dist,.gitignore,.vscode,docs,dev-app-update.yml,.nvmrc,eslint.config.mjs}'
@@ -15,6 +16,7 @@ extraResources:
 
 # Windows Configuration
 win: 
+  icon: 'build/icon.ico'
   # This community build is unsigned. Disabling executable signing/editing also
   # keeps local builds usable on Windows machines without Developer Mode.
   signAndEditExecutable: false
@@ -24,6 +26,8 @@ win:
 
 # Windows Installer Configuration
 nsis:
+  installerIcon: 'build/icon.ico'
+  uninstallerIcon: 'build/icon.ico'
   oneClick: false
   perMachine: false
   allowElevation: true
