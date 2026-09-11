@@ -10,10 +10,6 @@ const INSTALLER_SHA1 = 'd94d4445a3dda42e7dd54f5c7f789aa78c822074'
 const INSTALLER_URL = `https://maven.neoforged.net/releases/net/neoforged/neoforge/${NEOFORGE_VERSION}/neoforge-${NEOFORGE_VERSION}-installer.jar`
 
 function neoForgeClientPath(commonDir) {
-    return path.join(commonDir, 'libraries', 'net', 'neoforged', 'neoforge', NEOFORGE_VERSION, `neoforge-${NEOFORGE_VERSION}.jar`)
-}
-
-function neoForgeInstallerOutputPath(commonDir) {
     return path.join(commonDir, 'libraries', 'net', 'neoforged', 'neoforge', NEOFORGE_VERSION, `neoforge-${NEOFORGE_VERSION}-client.jar`)
 }
 
@@ -50,15 +46,6 @@ async function ensureNeoForgeClient({ commonDir, minecraftVersion, javaExecutabl
     const clientPath = neoForgeClientPath(commonDir)
     if(await validateLocalFile(clientPath, HashAlgo.MD5, expectedMD5)) return false
 
-    // NeoForge's installer writes the patched client with a -client classifier.
-    // Reuse it when present, but expose it to Helios under the unclassified
-    // version name expected by NeoForge's -DignoreList launch argument.
-    const installerOutputPath = neoForgeInstallerOutputPath(commonDir)
-    if(await validateLocalFile(installerOutputPath, HashAlgo.MD5, expectedMD5)) {
-        await fs.copy(installerOutputPath, clientPath, { overwrite: true })
-        return true
-    }
-
     onStatus('minecraft')
     await downloadMinecraftBase(commonDir, minecraftVersion, onProgress)
 
@@ -80,11 +67,6 @@ async function ensureNeoForgeClient({ commonDir, minecraftVersion, javaExecutabl
     onStatus('installing')
     onProgress(0)
     await runInstaller(javaExecutable, installerPath, commonDir, logger)
-
-    if(!await fs.pathExists(installerOutputPath)) {
-        throw new Error('NeoForge client installation completed, but the generated client file was not found.')
-    }
-    await fs.copy(installerOutputPath, clientPath, { overwrite: true })
 
     if(!await validateLocalFile(clientPath, HashAlgo.MD5, expectedMD5)) {
         throw new Error('NeoForge client installation completed, but the generated file failed validation.')
