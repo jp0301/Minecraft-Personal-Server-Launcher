@@ -33,6 +33,7 @@ const neoForgeLibraryRoot = path.join(minecraftRoot, 'libraries', 'net', 'neofor
 const clientJar = path.join(neoForgeLibraryRoot, `neoforge-${neoForgeVersion}-client.jar`)
 const universalJar = path.join(neoForgeLibraryRoot, `neoforge-${neoForgeVersion}-universal.jar`)
 const neoForgeMaven = `https://maven.neoforged.net/releases/net/neoforged/neoforge/${neoForgeVersion}`
+const neoForgeInstallerUrl = `${neoForgeMaven}/neoforge-${neoForgeVersion}-installer.jar`
 
 const libraryModules = versionManifest.libraries.map(lib => {
     const download = lib.downloads?.artifact
@@ -82,14 +83,14 @@ const instanceModules = fs.existsSync(instanceRoot) ? walk(instanceRoot).map(fil
 
 const versionArtifact = artifact(versionOutput, `${repoRaw}/neoforge/${versionId}.json`)
 const distribution = {
-    version: '0.2.2',
+    version: '0.2.3',
     rss: '',
     servers: [{
         id: 'heyodd-1.21.1',
         name: '영무예다음',
         description: '충북혁신도시 영무예다음 친구들을 위한 Vanilla+ Minecraft 서버',
         icon: `${repoRaw}/server-icon.png`,
-        version: '0.2.2',
+        version: '0.2.3',
         address: 'heyodd.iptime.org',
         minecraftVersion: '1.21.1',
         javaOptions: {
@@ -104,7 +105,9 @@ const distribution = {
             id: `net.neoforged:neoforge:${neoForgeVersion}:client`,
             name: `NeoForge ${neoForgeVersion}`,
             type: 'ForgeHosted',
-            artifact: artifact(clientJar, `${neoForgeMaven}/neoforge-${neoForgeVersion}-client.jar`),
+            // The patched client JAR is generated locally by the official NeoForge installer.
+            // The launcher prepares it before Helios validates the distribution.
+            artifact: artifact(clientJar, neoForgeInstallerUrl),
             subModules: [{
                 id: `net.neoforged:neoforge:${neoForgeVersion}:universal`,
                 name: 'NeoForge universal',

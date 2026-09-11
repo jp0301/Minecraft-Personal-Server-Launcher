@@ -30,6 +30,7 @@ const {
 // Internal Requirements
 const DiscordWrapper          = require('./assets/js/discordwrapper')
 const ProcessBuilder          = require('./assets/js/processbuilder')
+const { ensureNeoForgeClient } = require('./assets/js/neoforgeinstaller')
 
 // Launch Elements
 const launch_content          = document.getElementById('launch_content')
@@ -475,6 +476,25 @@ async function dlAsync(login = true) {
     setLaunchDetails(Lang.queryJS('landing.dlAsync.pleaseWait'))
     toggleLaunchArea(true)
     setLaunchPercentage(0, 100)
+
+    const neoForgeModule = serv.modules.find(module => module.rawModule.type === 'ForgeHosted' && module.rawModule.id.startsWith('net.neoforged:neoforge:'))
+    if(neoForgeModule != null) {
+        try {
+            await ensureNeoForgeClient({
+                commonDir: ConfigManager.getCommonDirectory(),
+                minecraftVersion: serv.rawServer.minecraftVersion,
+                javaExecutable: ConfigManager.getJavaExecutable(ConfigManager.getSelectedServer()),
+                expectedMD5: neoForgeModule.rawModule.artifact.MD5,
+                onProgress: setDownloadPercentage,
+                onStatus: stage => setLaunchDetails(Lang.queryJS(`landing.dlAsync.neoForge.${stage}`)),
+                logger: loggerLaunchSuite
+            })
+        } catch(err) {
+            loggerLaunchSuite.error('Unable to install NeoForge client.', err)
+            showLaunchFailure(Lang.queryJS('landing.dlAsync.neoForge.failureTitle'), err.message || Lang.queryJS('landing.dlAsync.seeConsoleForDetails'))
+            return
+        }
+    }
 
     const fullRepairModule = new FullRepair(
         ConfigManager.getCommonDirectory(),

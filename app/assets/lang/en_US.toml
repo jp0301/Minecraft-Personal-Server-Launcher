@@ -211,6 +211,12 @@ checkConsoleForDetails = "Please check the console (CTRL + Shift + i) for more d
 installComplete = "Game files installed successfully!"
 installFailureTitle = "Error Installing Game Files"
 
+[js.landing.dlAsync.neoForge]
+minecraft = "Preparing Minecraft base files"
+installer = "Downloading the official NeoForge installer"
+installing = "Installing NeoForge 21.1.249"
+failureTitle = "Error While Installing NeoForge"
+
 [js.landing.news]
 checking = "Checking for News"
 
