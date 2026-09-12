@@ -1,5 +1,5 @@
 {
-  "version": "0.2.10",
+  "version": "0.2.11",
   "rss": "",
   "servers": [
     {
@@ -7,7 +7,7 @@
       "name": "영무예다음",
       "description": "충북혁신도시 영무예다음 친구들을 위한 Vanilla+ Minecraft 서버",
       "icon": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/server-icon.png",
-      "version": "0.2.10",
+      "version": "0.2.11",
       "address": "heyodd.iptime.org",
       "minecraftVersion": "1.21.1",
       "javaOptions": {
@@ -560,6 +560,17 @@
           }
         },
         {
+          "id": "heyodd-mods-cloth-config-15.0.140-neoforge.jar",
+          "name": "cloth-config-15.0.140-neoforge.jar",
+          "type": "File",
+          "artifact": {
+            "size": 1163890,
+            "MD5": "4c3757160403fcccb8ad468c2ea22862",
+            "url": "https://cdn.modrinth.com/data/9s6osm5g/versions/izKINKFg/cloth-config-15.0.140-neoforge.jar",
+            "path": "mods/cloth-config-15.0.140-neoforge.jar"
+          }
+        },
+        {
           "id": "heyodd-mods-connector-2.0.0-beta.17+1.21.1-full.jar",
           "name": "connector-2.0.0-beta.17+1.21.1-full.jar",
           "type": "File",
@@ -733,6 +744,17 @@
             "MD5": "d3958f10d39f6ee0c5f9cdcb49937b92",
             "url": "https://cdn.modrinth.com/data/NcUtCpym/versions/9Ckiihkz/xaeroworldmap-neoforge-1.21.1-1.46.0.jar",
             "path": "mods/xaeroworldmap-neoforge-1.21.1-1.46.0.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-xplus-autofish-1.3.3-neoforged-mc1.21.1.jar",
+          "name": "xplus-autofish-1.3.3-neoforged-mc1.21.1.jar",
+          "type": "File",
+          "artifact": {
+            "size": 122043,
+            "MD5": "310475ff06e76f0c552e99771af536d3",
+            "url": "https://cdn.modrinth.com/data/2H1rLgy4/versions/nC2iqgow/xplus-autofish-1.3.3-neoforged-mc1.21.1.jar",
+            "path": "mods/xplus-autofish-1.3.3-neoforged-mc1.21.1.jar"
           }
         },
         {
