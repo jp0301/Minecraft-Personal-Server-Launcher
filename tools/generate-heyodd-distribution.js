@@ -22,6 +22,19 @@ const artifact = (file, url, relativePath) => ({
     url,
     ...(relativePath ? { path: relativePath.replaceAll('\\', '/') } : {})
 })
+const githubTextExtensions = new Set(['.cfg', '.conf', '.ini', '.json', '.json5', '.properties', '.toml', '.txt', '.xml', '.yaml', '.yml'])
+const githubHostedArtifact = (file, url, relativePath) => {
+    const localContent = fs.readFileSync(file)
+    const hostedContent = githubTextExtensions.has(path.extname(file).toLowerCase())
+        ? Buffer.from(localContent.toString('utf8').replaceAll('\r\n', '\n'))
+        : localContent
+    return {
+        size: hostedContent.length,
+        MD5: crypto.createHash('md5').update(hostedContent).digest('hex'),
+        url,
+        path: relativePath.replaceAll('\\', '/')
+    }
+}
 
 const versionManifest = JSON.parse(fs.readFileSync(versionSource, 'utf8'))
 fs.mkdirSync(versionOutputDir, { recursive: true })
@@ -75,20 +88,22 @@ const instanceModules = fs.existsSync(instanceRoot) ? walk(instanceRoot).map(fil
         id: `heyodd-config-${relative.replaceAll('/', '-').replaceAll(':', '-')}`,
         name: relative,
         type: 'File',
-        artifact: artifact(file, `${repoRaw}/instance/${relative.split('/').map(encodeURIComponent).join('/')}`, relative)
+        // GitHub raw serves repository text with LF line endings, even from a
+        // Windows checkout configured to materialize those files as CRLF.
+        artifact: githubHostedArtifact(file, `${repoRaw}/instance/${relative.split('/').map(encodeURIComponent).join('/')}`, relative)
     }
 }) : []
 
 const versionArtifact = artifact(versionOutput, `${repoRaw}/neoforge/${versionId}.json`)
 const distribution = {
-    version: '0.2.9',
+    version: '0.2.10',
     rss: '',
     servers: [{
         id: 'heyodd-1.21.1',
         name: '영무예다음',
         description: '충북혁신도시 영무예다음 친구들을 위한 Vanilla+ Minecraft 서버',
         icon: `${repoRaw}/server-icon.png`,
-        version: '0.2.9',
+        version: '0.2.10',
         address: 'heyodd.iptime.org',
         minecraftVersion: '1.21.1',
         javaOptions: {

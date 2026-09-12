@@ -1,5 +1,5 @@
 {
-  "version": "0.2.9",
+  "version": "0.2.10",
   "rss": "",
   "servers": [
     {
@@ -7,7 +7,7 @@
       "name": "영무예다음",
       "description": "충북혁신도시 영무예다음 친구들을 위한 Vanilla+ Minecraft 서버",
       "icon": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/server-icon.png",
-      "version": "0.2.9",
+      "version": "0.2.10",
       "address": "heyodd.iptime.org",
       "minecraftVersion": "1.21.1",
       "javaOptions": {
@@ -751,8 +751,8 @@
           "name": "config/fabric/indigo-renderer.properties",
           "type": "File",
           "artifact": {
-            "size": 290,
-            "MD5": "bf23838803f7d7e01e6fe774fa4e3382",
+            "size": 281,
+            "MD5": "06936c995994daaa58fbd5ec55cbec66",
             "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/fabric/indigo-renderer.properties",
             "path": "config/fabric/indigo-renderer.properties"
           }
@@ -762,8 +762,8 @@
           "name": "config/ferritecore-mixin.toml",
           "type": "File",
           "artifact": {
-            "size": 1603,
-            "MD5": "1273149165ad75919e7f3234a993d101",
+            "size": 1579,
+            "MD5": "40d7a8c5a40dd540c34b4a8ee96049b5",
             "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/ferritecore-mixin.toml",
             "path": "config/ferritecore-mixin.toml"
           }
@@ -773,8 +773,8 @@
           "name": "config/fml.toml",
           "type": "File",
           "artifact": {
-            "size": 1550,
-            "MD5": "61a62e6a2b5b00f324065233e76b9a64",
+            "size": 1518,
+            "MD5": "cfccbe591b26e43307a94c2e64c7b4e8",
             "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/fml.toml",
             "path": "config/fml.toml"
           }
@@ -795,8 +795,8 @@
           "name": "config/iris.properties",
           "type": "File",
           "artifact": {
-            "size": 313,
-            "MD5": "c5213a0bb50581f529f5534837211fbe",
+            "size": 304,
+            "MD5": "fb213c6795fa85c6b77eeefed0f4f088",
             "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/iris.properties",
             "path": "config/iris.properties"
           }
@@ -817,8 +817,8 @@
           "name": "config/mobends-client.toml",
           "type": "File",
           "artifact": {
-            "size": 774,
-            "MD5": "ddc2d89333261a3c76678678c9e8e2b6",
+            "size": 754,
+            "MD5": "e0b634dee06bf08baf1f0da3721aad24",
             "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/mobends-client.toml",
             "path": "config/mobends-client.toml"
           }
@@ -828,8 +828,8 @@
           "name": "config/modernfix-common.toml",
           "type": "File",
           "artifact": {
-            "size": 105,
-            "MD5": "40e1cfe891a1355f22e5c07591f8943e",
+            "size": 103,
+            "MD5": "daa4dcddedae4c4873738cf18b1ee25d",
             "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/modernfix-common.toml",
             "path": "config/modernfix-common.toml"
           }
@@ -861,8 +861,8 @@
           "name": "config/neoforge-client.toml",
           "type": "File",
           "artifact": {
-            "size": 578,
-            "MD5": "7f81c16ea3d467da83df18250f772149",
+            "size": 570,
+            "MD5": "1bd849f7104eae072adbf27dd64fd49b",
             "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/neoforge-client.toml",
             "path": "config/neoforge-client.toml"
           }
@@ -872,8 +872,8 @@
           "name": "config/neoforge-common.toml",
           "type": "File",
           "artifact": {
-            "size": 772,
-            "MD5": "914110a675baa858ef6725e3f56e513c",
+            "size": 764,
+            "MD5": "17ca5aeaf2a1cbe7b12715ad78ea4601",
             "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/neoforge-common.toml",
             "path": "config/neoforge-common.toml"
           }
@@ -1048,8 +1048,8 @@
           "name": "config/xaerohud.txt",
           "type": "File",
           "artifact": {
-            "size": 123,
-            "MD5": "2f87c54b0b2e85e6a5031171284d6f31",
+            "size": 122,
+            "MD5": "904c91a63e397a28cd8ee325e390b5db",
             "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/config/xaerohud.txt",
             "path": "config/xaerohud.txt"
           }
@@ -1070,8 +1070,8 @@
           "name": "options.txt",
           "type": "File",
           "artifact": {
-            "size": 5288,
-            "MD5": "df75c732a25a78450cd8d01b3280b147",
+            "size": 5114,
+            "MD5": "73634d09ed85bf0df7b1e07a7c13e4e4",
             "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/options.txt",
             "path": "options.txt"
           }
