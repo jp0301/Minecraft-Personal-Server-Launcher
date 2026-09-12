@@ -444,6 +444,46 @@ const GAME_JOINED_REGEX = /\[.+\]: Sound engine started/
 const GAME_LAUNCH_REGEX = /^\[.+\]: (?:MinecraftForge .+ Initialized|ModLauncher .+ starting: .+|Loading Minecraft .+ with Fabric Loader .+)$/
 const MIN_LINGER = 5000
 
+/**
+ * Delete only explicitly retired pack files from the selected instance.
+ * The list is delivered by the remote distribution index, which lets pack
+ * maintainers remove obsolete mods without publishing a new launcher build.
+ */
+async function cleanupRetiredPackFiles(serv, logger){
+    const retiredFiles = serv.rawServer.cleanupFiles
+    if(!Array.isArray(retiredFiles) || retiredFiles.length === 0) {
+        return
+    }
+
+    const fsExtra = require('fs-extra')
+    const pathUtil = require('path')
+    const instanceRoot = pathUtil.resolve(
+        ConfigManager.getInstanceDirectory(),
+        serv.rawServer.id
+    )
+
+    for(const relativePath of retiredFiles) {
+        if(typeof relativePath !== 'string' || pathUtil.isAbsolute(relativePath)) {
+            logger.warn(`Ignoring unsafe cleanup path: ${relativePath}`)
+            continue
+        }
+
+        const target = pathUtil.resolve(instanceRoot, relativePath)
+        if(!target.startsWith(`${instanceRoot}${pathUtil.sep}`)) {
+            logger.warn(`Ignoring cleanup path outside the instance: ${relativePath}`)
+            continue
+        }
+
+        if(await fsExtra.pathExists(target)) {
+            const stat = await fsExtra.stat(target)
+            if(stat.isFile()) {
+                await fsExtra.remove(target)
+                logger.info(`Removed retired pack file: ${relativePath}`)
+            }
+        }
+    }
+}
+
 async function dlAsync(login = true) {
 
     // Login parameter is temporary for debug purposes. Allows testing the validation/downloads without
@@ -465,6 +505,14 @@ async function dlAsync(login = true) {
     }
 
     const serv = distro.getServerById(ConfigManager.getSelectedServer())
+
+    try {
+        await cleanupRetiredPackFiles(serv, loggerLaunchSuite)
+    } catch(err) {
+        loggerLaunchSuite.error('Unable to remove retired pack files.', err)
+        showLaunchFailure(Lang.queryJS('landing.dlAsync.errorDuringLaunchTitle'), err.message || Lang.queryJS('landing.dlAsync.seeConsoleForDetails'))
+        return
+    }
 
     if(login) {
         if(ConfigManager.getSelectedAccount() == null){

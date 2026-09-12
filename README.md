@@ -53,7 +53,7 @@ node tools/generate-heyodd-distribution.js "$env:APPDATA\.minecraft" distributio
 npm run lint
 ```
 
-검증된 변경을 GitHub `main` 브랜치에 올리면 기존 런처가 다음 실행 시 새 `distribution.json`을 읽고 변경된 파일만 다운로드합니다. 타사 모드 JAR는 저장소에 직접 복제하지 않고 CurseForge 또는 Modrinth의 공식 다운로드 URL을 사용합니다.
+검증된 변경을 GitHub `main` 브랜치에 올리면 기존 런처가 다음 실행 시 새 `distribution.json`을 읽고 변경된 파일만 다운로드합니다. 타사 모드 JAR는 저장소에 직접 복제하지 않고 CurseForge 또는 Modrinth의 공식 다운로드 URL을 사용합니다. 기존 사용자에게서 제거해야 하는 파일은 서버의 `cleanupFiles` 목록에 추가하면 다음 실행 전에 안전하게 정리됩니다.
 
 ## 사용자 설치 흐름
 

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "packVersion": "1.0.5",
+  "packVersion": "1.0.6",
   "minecraft": "1.21.1",
   "neoForge": "21.1.249",
   "server": "heyodd.iptime.org",
@@ -8,7 +8,6 @@
     { "path": "mods/architectury-13.0.11-neoforge.jar", "url": "https://www.curseforge.com/api/v1/mods/419699/files/8492726/download", "sha256": "9cc92f2c09533fc5482c60f993bd891c655a0e32b637037cdcb7c2b23adedeeb", "size": 584734 },
     { "path": "mods/armor-hider-neoforge-0.13.4+mc-1.21.0-1.jar", "url": "https://cdn.modrinth.com/data/GgG2my3y/versions/PDgJwcfW/armor-hider-neoforge-0.13.4%2Bmc-1.21.0-1.jar", "sha256": "437ef807c4f0da5842de5e13eb4040725aed8b2adb4f0f145b6ec5955de0e4b8", "size": 596162 },
     { "path": "mods/BlockBlocker-neoforge-1.21.1-1.11.0.jar", "url": "https://cdn.modrinth.com/data/juUIy2JX/versions/3ZUtPZQp/BlockBlocker-neoforge-1.21.1-1.11.0.jar", "sha256": "a9c4fb574208d37689e3d25852d8e7c1514ca7df6b3046cb5ff9af16617995a3", "size": 13010 },
-    { "path": "mods/cloth-config-15.0.140-neoforge.jar", "url": "https://cdn.modrinth.com/data/9s6osm5g/versions/izKINKFg/cloth-config-15.0.140-neoforge.jar", "sha256": "65e722e0d98431a07c45f8bdd8d529a217cc8c175fde1740248bd5c1b4f3c0d4", "size": 1163890 },
     { "path": "mods/connector-2.0.0-beta.17+1.21.1-full.jar", "url": "https://cdn.modrinth.com/data/u58R1TMW/versions/IITF0PRC/connector-2.0.0-beta.17%2B1.21.1-full.jar", "sha256": "ca70b57df3a7a4e8d211fea7ff3ae77e768482af374f26bf953ff5fd755564f0", "size": 4573244 },
     { "path": "mods/continuity-3.0.0+1.21.neoforge.jar", "url": "https://cdn.modrinth.com/data/1IjD5062/versions/eXGUs5sy/continuity-3.0.0%2B1.21.neoforge.jar", "sha256": "4cc0a4a09ae09c64bb567e42381652b700f9cade5067a75e83115662cc475f0a", "size": 1014626 },
     { "path": "mods/EasyMagic-v21.1.4-1.21.1-NeoForge.jar", "url": "https://cdn.modrinth.com/data/9hx3AbJM/versions/MxbfrOEv/EasyMagic-v21.1.4-1.21.1-NeoForge.jar", "sha256": "e641a83dcd0dd1a66c545069a706349df94f5b64dc5a252944596439009a699f", "size": 143992 },
@@ -25,7 +24,6 @@
     { "path": "mods/sodium-neoforge-0.8.13+mc1.21.1.jar", "url": "https://www.curseforge.com/api/v1/mods/394468/files/8756580/download", "sha256": "575d187b15328d7bddd8a9b1bee64333c22c14735f5780ec49eac0cd5503c08d", "size": 1292934 },
     { "path": "mods/xaerominimap-neoforge-1.21.1-26.4.2.jar", "url": "https://www.curseforge.com/api/v1/mods/263420/files/8449819/download", "sha256": "b722bcf794288f0ed51165cd1f057fc4505e20abbc723b2e17e900426e443603", "size": 2185409 },
     { "path": "mods/xaeroworldmap-neoforge-1.21.1-1.46.0.jar", "url": "https://cdn.modrinth.com/data/NcUtCpym/versions/9Ckiihkz/xaeroworldmap-neoforge-1.21.1-1.46.0.jar", "sha256": "a7f059e4c48211f6d5c962e7640f5179cc1636bccc907ea77ab9e1865635cb24", "size": 1422680 },
-    { "path": "mods/xplus-autofish-1.3.3-neoforged-mc1.21.1.jar", "url": "https://cdn.modrinth.com/data/2H1rLgy4/versions/nC2iqgow/xplus-autofish-1.3.3-neoforged-mc1.21.1.jar", "sha256": "ce74435630c3c6f7424c86aa2d9b94210a825f74bbb1edb4a659b3ae5ee0bad9", "size": 122043 },
     { "path": "shaderpacks/ComplementaryReimagined_r5.9.zip", "url": "https://www.curseforge.com/api/v1/mods/627557/files/8791766/download", "sha256": "46ed277127f04bac69af03effa897815bd20af959023784fa12a003d31425dfe", "size": 552449 }
   ]
 }
