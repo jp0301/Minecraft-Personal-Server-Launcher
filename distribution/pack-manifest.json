@@ -1,14 +1,20 @@
 {
   "schemaVersion": 1,
-  "packVersion": "1.0.3",
+  "packVersion": "1.0.4",
   "minecraft": "1.21.1",
   "neoForge": "21.1.249",
   "server": "heyodd.iptime.org",
   "files": [
     { "path": "mods/architectury-13.0.11-neoforge.jar", "url": "https://www.curseforge.com/api/v1/mods/419699/files/8492726/download", "sha256": "9cc92f2c09533fc5482c60f993bd891c655a0e32b637037cdcb7c2b23adedeeb", "size": 584734 },
+    { "path": "mods/armor-hider-neoforge-0.13.4+mc-1.21.0-1.jar", "url": "https://cdn.modrinth.com/data/GgG2my3y/versions/PDgJwcfW/armor-hider-neoforge-0.13.4%2Bmc-1.21.0-1.jar", "sha256": "437ef807c4f0da5842de5e13eb4040725aed8b2adb4f0f145b6ec5955de0e4b8", "size": 596162 },
+    { "path": "mods/BlockBlocker-neoforge-1.21.1-1.11.0.jar", "url": "https://cdn.modrinth.com/data/juUIy2JX/versions/3ZUtPZQp/BlockBlocker-neoforge-1.21.1-1.11.0.jar", "sha256": "a9c4fb574208d37689e3d25852d8e7c1514ca7df6b3046cb5ff9af16617995a3", "size": 13010 },
+    { "path": "mods/connector-2.0.0-beta.17+1.21.1-full.jar", "url": "https://cdn.modrinth.com/data/u58R1TMW/versions/IITF0PRC/connector-2.0.0-beta.17%2B1.21.1-full.jar", "sha256": "ca70b57df3a7a4e8d211fea7ff3ae77e768482af374f26bf953ff5fd755564f0", "size": 4573244 },
+    { "path": "mods/continuity-3.0.0+1.21.neoforge.jar", "url": "https://cdn.modrinth.com/data/1IjD5062/versions/eXGUs5sy/continuity-3.0.0%2B1.21.neoforge.jar", "sha256": "4cc0a4a09ae09c64bb567e42381652b700f9cade5067a75e83115662cc475f0a", "size": 1014626 },
     { "path": "mods/EasyMagic-v21.1.4-1.21.1-NeoForge.jar", "url": "https://cdn.modrinth.com/data/9hx3AbJM/versions/MxbfrOEv/EasyMagic-v21.1.4-1.21.1-NeoForge.jar", "sha256": "e641a83dcd0dd1a66c545069a706349df94f5b64dc5a252944596439009a699f", "size": 143992 },
     { "path": "mods/ferritecore-7.0.3-neoforge.jar", "url": "https://www.curseforge.com/api/v1/mods/429235/files/7524151/download", "sha256": "d87ea28262715ebff45b8a82d493e6b468e7a4521bc021df5d88302196d030a8", "size": 121559 },
+    { "path": "mods/forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar", "url": "https://cdn.modrinth.com/data/Aqlf1Shp/versions/V9WdDUTx/forgified-fabric-api-0.116.15%2B2.3.5%2B1.21.1.jar", "sha256": "96f8b489f401c64e87343daf57a030ccd1b58be40fc0aad701278ba58a0fadaf", "size": 5613159 },
     { "path": "mods/iris-neoforge-1.8.14-beta.1+mc1.21.1.jar", "url": "https://www.curseforge.com/api/v1/mods/455508/files/8242804/download", "sha256": "60d5f8bf52f25e9986440f4a4270a6bd986d9cff994510e1108ac1547063b314", "size": 2540723 },
+    { "path": "mods/Jade-1.21.1-NeoForge-15.10.6.jar", "url": "https://cdn.modrinth.com/data/nvQzSEkH/versions/eYz2YBGT/Jade-1.21.1-NeoForge-15.10.6.jar", "sha256": "276f1f65a20d04f536989c4f311949d770b52c440c23c2b904a08860f3c93810", "size": 726853 },
     { "path": "mods/koreanpatch-neoforge-1.9.6+mc1.21.jar", "url": "https://cdn.modrinth.com/data/qyulnpBL/versions/CRXd37Zg/koreanpatch-neoforge-1.9.6%2Bmc1.21.jar", "sha256": "0dff16ad9752c7211f39672e3480866bef5e1d7e4a37206525335995cae585af", "size": 373120 },
     { "path": "mods/mobends-1.21.1-5.4.6-neoforge.jar", "url": "https://www.curseforge.com/api/v1/mods/1438637/files/8810871/download", "sha256": "cf50f23002b63468337420adcbb5229952cf6eda18f159687f4f5e3c4309ca15", "size": 1476862 },
     { "path": "mods/modernfix-neoforge-5.27.24+mc1.21.1.jar", "url": "https://www.curseforge.com/api/v1/mods/790626/files/8774737/download", "sha256": "e6e9446890f0feb3aab3f6e73ae18cb17575c370f232179fef7baa30e61538fe", "size": 604333 },
@@ -17,6 +23,7 @@
     { "path": "mods/PuzzlesLib-v21.1.60-mc1.21.1-NeoForge.jar", "url": "https://cdn.modrinth.com/data/QAGBst4M/versions/lh44g7RC/PuzzlesLib-v21.1.60-mc1.21.1-NeoForge.jar", "sha256": "179bcaafb812618834ba82e7f29b15eaee8894f74fb96152a51cfc22ad4f45c4", "size": 1442182 },
     { "path": "mods/sodium-neoforge-0.8.13+mc1.21.1.jar", "url": "https://www.curseforge.com/api/v1/mods/394468/files/8756580/download", "sha256": "575d187b15328d7bddd8a9b1bee64333c22c14735f5780ec49eac0cd5503c08d", "size": 1292934 },
     { "path": "mods/xaerominimap-neoforge-1.21.1-26.4.2.jar", "url": "https://www.curseforge.com/api/v1/mods/263420/files/8449819/download", "sha256": "b722bcf794288f0ed51165cd1f057fc4505e20abbc723b2e17e900426e443603", "size": 2185409 },
+    { "path": "mods/xaeroworldmap-neoforge-1.21.1-1.46.0.jar", "url": "https://cdn.modrinth.com/data/NcUtCpym/versions/9Ckiihkz/xaeroworldmap-neoforge-1.21.1-1.46.0.jar", "sha256": "a7f059e4c48211f6d5c962e7640f5179cc1636bccc907ea77ab9e1865635cb24", "size": 1422680 },
     { "path": "shaderpacks/ComplementaryReimagined_r5.9.zip", "url": "https://www.curseforge.com/api/v1/mods/627557/files/8791766/download", "sha256": "46ed277127f04bac69af03effa897815bd20af959023784fa12a003d31425dfe", "size": 552449 }
   ]
 }

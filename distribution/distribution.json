@@ -1,5 +1,5 @@
 {
-  "version": "0.2.8",
+  "version": "0.2.9",
   "rss": "",
   "servers": [
     {
@@ -7,7 +7,7 @@
       "name": "영무예다음",
       "description": "충북혁신도시 영무예다음 친구들을 위한 Vanilla+ Minecraft 서버",
       "icon": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/server-icon.png",
-      "version": "0.2.8",
+      "version": "0.2.9",
       "address": "heyodd.iptime.org",
       "minecraftVersion": "1.21.1",
       "javaOptions": {
@@ -538,6 +538,50 @@
           }
         },
         {
+          "id": "heyodd-mods-armor-hider-neoforge-0.13.4+mc-1.21.0-1.jar",
+          "name": "armor-hider-neoforge-0.13.4+mc-1.21.0-1.jar",
+          "type": "File",
+          "artifact": {
+            "size": 596162,
+            "MD5": "3e486b00667f9fd59e10c1d12ba59fd2",
+            "url": "https://cdn.modrinth.com/data/GgG2my3y/versions/PDgJwcfW/armor-hider-neoforge-0.13.4%2Bmc-1.21.0-1.jar",
+            "path": "mods/armor-hider-neoforge-0.13.4+mc-1.21.0-1.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-BlockBlocker-neoforge-1.21.1-1.11.0.jar",
+          "name": "BlockBlocker-neoforge-1.21.1-1.11.0.jar",
+          "type": "File",
+          "artifact": {
+            "size": 13010,
+            "MD5": "a29e878cea5697533c5a62c14e3d456f",
+            "url": "https://cdn.modrinth.com/data/juUIy2JX/versions/3ZUtPZQp/BlockBlocker-neoforge-1.21.1-1.11.0.jar",
+            "path": "mods/BlockBlocker-neoforge-1.21.1-1.11.0.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-connector-2.0.0-beta.17+1.21.1-full.jar",
+          "name": "connector-2.0.0-beta.17+1.21.1-full.jar",
+          "type": "File",
+          "artifact": {
+            "size": 4573244,
+            "MD5": "9b79e8afcd0f4b428fecc789b08ae0f6",
+            "url": "https://cdn.modrinth.com/data/u58R1TMW/versions/IITF0PRC/connector-2.0.0-beta.17%2B1.21.1-full.jar",
+            "path": "mods/connector-2.0.0-beta.17+1.21.1-full.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-continuity-3.0.0+1.21.neoforge.jar",
+          "name": "continuity-3.0.0+1.21.neoforge.jar",
+          "type": "File",
+          "artifact": {
+            "size": 1014626,
+            "MD5": "06a2323e992834efcac3505e3ee57b15",
+            "url": "https://cdn.modrinth.com/data/1IjD5062/versions/eXGUs5sy/continuity-3.0.0%2B1.21.neoforge.jar",
+            "path": "mods/continuity-3.0.0+1.21.neoforge.jar"
+          }
+        },
+        {
           "id": "heyodd-mods-EasyMagic-v21.1.4-1.21.1-NeoForge.jar",
           "name": "EasyMagic-v21.1.4-1.21.1-NeoForge.jar",
           "type": "File",
@@ -560,6 +604,17 @@
           }
         },
         {
+          "id": "heyodd-mods-forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar",
+          "name": "forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar",
+          "type": "File",
+          "artifact": {
+            "size": 5613159,
+            "MD5": "0bfb5c559b630018d390b11a277c66f4",
+            "url": "https://cdn.modrinth.com/data/Aqlf1Shp/versions/V9WdDUTx/forgified-fabric-api-0.116.15%2B2.3.5%2B1.21.1.jar",
+            "path": "mods/forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar"
+          }
+        },
+        {
           "id": "heyodd-mods-iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
           "name": "iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
           "type": "File",
@@ -568,6 +623,17 @@
             "MD5": "6b68276a6718656ec476cfac69dfe013",
             "url": "https://www.curseforge.com/api/v1/mods/455508/files/8242804/download",
             "path": "mods/iris-neoforge-1.8.14-beta.1+mc1.21.1.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-Jade-1.21.1-NeoForge-15.10.6.jar",
+          "name": "Jade-1.21.1-NeoForge-15.10.6.jar",
+          "type": "File",
+          "artifact": {
+            "size": 726853,
+            "MD5": "67b89f182472859d1e478477716c9462",
+            "url": "https://cdn.modrinth.com/data/nvQzSEkH/versions/eYz2YBGT/Jade-1.21.1-NeoForge-15.10.6.jar",
+            "path": "mods/Jade-1.21.1-NeoForge-15.10.6.jar"
           }
         },
         {
@@ -656,6 +722,17 @@
             "MD5": "17eff3fe469527971f1f05990f3527f8",
             "url": "https://www.curseforge.com/api/v1/mods/263420/files/8449819/download",
             "path": "mods/xaerominimap-neoforge-1.21.1-26.4.2.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-xaeroworldmap-neoforge-1.21.1-1.46.0.jar",
+          "name": "xaeroworldmap-neoforge-1.21.1-1.46.0.jar",
+          "type": "File",
+          "artifact": {
+            "size": 1422680,
+            "MD5": "d3958f10d39f6ee0c5f9cdcb49937b92",
+            "url": "https://cdn.modrinth.com/data/NcUtCpym/versions/9Ckiihkz/xaeroworldmap-neoforge-1.21.1-1.46.0.jar",
+            "path": "mods/xaeroworldmap-neoforge-1.21.1-1.46.0.jar"
           }
         },
         {

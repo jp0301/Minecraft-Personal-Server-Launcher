@@ -40,6 +40,21 @@ npm start
 
 Windows 설치 파일은 `npm run dist:win`으로 만듭니다. 결과물은 `dist/HeyOdd-Launcher-Setup-<version>.exe`에 생성됩니다.
 
+## 게임 팩 업데이트
+
+런처 프로그램과 게임 팩은 별도로 버전을 관리합니다. 모드, 설정 또는 셰이더만 변경할 때는 런처 설치 파일을 다시 만들지 않습니다.
+
+1. `distribution/pack-manifest.json`에 클라이언트 파일의 공식 다운로드 URL, SHA-256 및 크기를 반영합니다.
+2. `packVersion`과 `tools/generate-heyodd-distribution.js`의 배포 버전을 올립니다.
+3. 현재 Minecraft 설치를 기준으로 배포 목록을 다시 생성합니다.
+
+```powershell
+node tools/generate-heyodd-distribution.js "$env:APPDATA\.minecraft" distribution distribution/pack-manifest.json
+npm run lint
+```
+
+검증된 변경을 GitHub `main` 브랜치에 올리면 기존 런처가 다음 실행 시 새 `distribution.json`을 읽고 변경된 파일만 다운로드합니다. 타사 모드 JAR는 저장소에 직접 복제하지 않고 CurseForge 또는 Modrinth의 공식 다운로드 URL을 사용합니다.
+
 ## 사용자 설치 흐름
 
 1. Windows 설치 프로그램으로 런처를 설치합니다.
