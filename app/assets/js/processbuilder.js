@@ -404,7 +404,7 @@ class ProcessBuilder {
         const argDiscovery = /\${*(.*)}/
 
         // JVM Arguments First
-        let args = this.vanillaManifest.arguments.jvm
+        let args = structuredClone(this.vanillaManifest.arguments.jvm)
 
         // Debug securejarhandler
         // args.push('-Dbsl.debug=true')
@@ -434,7 +434,7 @@ class ProcessBuilder {
         args.push(this.modManifest.mainClass)
 
         // Vanilla Arguments
-        args = args.concat(this.vanillaManifest.arguments.game)
+        args = args.concat(structuredClone(this.vanillaManifest.arguments.game))
 
         for(let i=0; i<args.length; i++){
             if(typeof args[i] === 'object' && args[i].rules != null){
