@@ -1,5 +1,5 @@
 {
-  "version": "0.2.14",
+  "version": "0.2.15",
   "rss": "",
   "servers": [
     {
@@ -7,9 +7,10 @@
       "name": "영무예다음",
       "description": "충북혁신도시 영무예다음 친구들을 위한 Vanilla+ Minecraft 서버",
       "icon": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/server-icon.png",
-      "version": "0.2.14",
+      "version": "0.2.15",
       "cleanupFiles": [
-        "mods/fabric-api-0.116.17+1.21.1.jar"
+        "mods/fabric-api-0.116.17+1.21.1.jar",
+        "mods/armor-hider-neoforge-0.13.4+mc-1.21.0-1.jar"
       ],
       "address": "heyodd.iptime.org",
       "minecraftVersion": "1.21.1",
@@ -541,17 +542,6 @@
           }
         },
         {
-          "id": "heyodd-mods-armor-hider-neoforge-0.13.4+mc-1.21.0-1.jar",
-          "name": "armor-hider-neoforge-0.13.4+mc-1.21.0-1.jar",
-          "type": "File",
-          "artifact": {
-            "size": 596162,
-            "MD5": "3e486b00667f9fd59e10c1d12ba59fd2",
-            "url": "https://cdn.modrinth.com/data/GgG2my3y/versions/PDgJwcfW/armor-hider-neoforge-0.13.4%2Bmc-1.21.0-1.jar",
-            "path": "mods/armor-hider-neoforge-0.13.4+mc-1.21.0-1.jar"
-          }
-        },
-        {
           "id": "heyodd-mods-BlockBlocker-neoforge-1.21.1-1.11.0.jar",
           "name": "BlockBlocker-neoforge-1.21.1-1.11.0.jar",
           "type": "File",
@@ -582,6 +572,17 @@
             "MD5": "4c3757160403fcccb8ad468c2ea22862",
             "url": "https://cdn.modrinth.com/data/9s6osm5g/versions/izKINKFg/cloth-config-15.0.140-neoforge.jar",
             "path": "mods/cloth-config-15.0.140-neoforge.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-cosmeticarmorreworked-1.21.1-v1-neoforge.jar",
+          "name": "cosmeticarmorreworked-1.21.1-v1-neoforge.jar",
+          "type": "File",
+          "artifact": {
+            "size": 92722,
+            "MD5": "881eb025d54ca01165c115a38a8d48c4",
+            "url": "https://www.curseforge.com/api/v1/mods/237307/files/5610814/download",
+            "path": "mods/cosmeticarmorreworked-1.21.1-v1-neoforge.jar"
           }
         },
         {
@@ -626,6 +627,17 @@
             "MD5": "e0374dac41d6c641903f9e241911e1d3",
             "url": "https://www.curseforge.com/api/v1/mods/429235/files/7524151/download",
             "path": "mods/ferritecore-7.0.3-neoforge.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-ftb-library-neoforge-2101.1.36.jar",
+          "name": "ftb-library-neoforge-2101.1.36.jar",
+          "type": "File",
+          "artifact": {
+            "size": 1439427,
+            "MD5": "69ebc0ddc837a23c2ca76bd8cc490937",
+            "url": "https://www.curseforge.com/api/v1/mods/404465/files/8858846/download",
+            "path": "mods/ftb-library-neoforge-2101.1.36.jar"
           }
         },
         {
