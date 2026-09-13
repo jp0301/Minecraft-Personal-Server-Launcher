@@ -96,18 +96,15 @@ const instanceModules = fs.existsSync(instanceRoot) ? walk(instanceRoot).map(fil
 
 const versionArtifact = artifact(versionOutput, `${repoRaw}/neoforge/${versionId}.json`)
 const distribution = {
-    version: '0.2.12',
+    version: '0.2.13',
     rss: '',
     servers: [{
         id: 'heyodd-1.21.1',
         name: '영무예다음',
         description: '충북혁신도시 영무예다음 친구들을 위한 Vanilla+ Minecraft 서버',
         icon: `${repoRaw}/server-icon.png`,
-        version: '0.2.12',
-        cleanupFiles: [
-            'mods/cloth-config-15.0.140-neoforge.jar',
-            'mods/xplus-autofish-1.3.3-neoforged-mc1.21.1.jar'
-        ],
+        version: '0.2.13',
+        cleanupFiles: [],
         address: 'heyodd.iptime.org',
         minecraftVersion: '1.21.1',
         javaOptions: {
