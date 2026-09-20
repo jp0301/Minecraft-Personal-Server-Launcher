@@ -1,5 +1,5 @@
 {
-  "version": "0.2.19",
+  "version": "0.2.20",
   "rss": "",
   "servers": [
     {
@@ -7,7 +7,7 @@
       "name": "영무예다음",
       "description": "충북혁신도시 영무예다음 친구들을 위한 Vanilla+ Minecraft 서버",
       "icon": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/server-icon.png",
-      "version": "0.2.19",
+      "version": "0.2.20",
       "cleanupFiles": [
         "mods/fabric-api-0.116.17+1.21.1.jar",
         "mods/armor-hider-neoforge-0.13.4+mc-1.21.0-1.jar",
@@ -545,6 +545,28 @@
           }
         },
         {
+          "id": "heyodd-mods-artifacts-neoforge-13.2.5.jar",
+          "name": "artifacts-neoforge-13.2.5.jar",
+          "type": "File",
+          "artifact": {
+            "size": 1086922,
+            "MD5": "16cf5de839360972a30396bd106422ac",
+            "url": "https://www.curseforge.com/api/v1/mods/312353/files/8791899/download",
+            "path": "mods/artifacts-neoforge-13.2.5.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-backpacked-neoforge-1.21.1-3.0.5.jar",
+          "name": "backpacked-neoforge-1.21.1-3.0.5.jar",
+          "type": "File",
+          "artifact": {
+            "size": 1282359,
+            "MD5": "cbd462b8e9f4afde42f3b822fde50b94",
+            "url": "https://www.curseforge.com/api/v1/mods/352835/files/7866688/download",
+            "path": "mods/backpacked-neoforge-1.21.1-3.0.5.jar"
+          }
+        },
+        {
           "id": "heyodd-mods-BlockBlocker-neoforge-1.21.1-1.11.0.jar",
           "name": "BlockBlocker-neoforge-1.21.1-1.11.0.jar",
           "type": "File",
@@ -608,6 +630,17 @@
             "MD5": "179189c52b45a469e683570be4e77188",
             "url": "https://www.curseforge.com/api/v1/mods/328085/files/7963363/download",
             "path": "mods/create-1.21.1-6.0.10.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-curios-neoforge-9.5.1+1.21.1.jar",
+          "name": "curios-neoforge-9.5.1+1.21.1.jar",
+          "type": "File",
+          "artifact": {
+            "size": 410690,
+            "MD5": "e8f0a3574264bb202c153b90293dc84c",
+            "url": "https://www.curseforge.com/api/v1/mods/309927/files/6529130/download",
+            "path": "mods/curios-neoforge-9.5.1+1.21.1.jar"
           }
         },
         {
@@ -740,6 +773,17 @@
             "MD5": "509276449f20e19dedb6ab17f58ef492",
             "url": "https://www.curseforge.com/api/v1/mods/499980/files/8905916/download",
             "path": "mods/moonlight-1.21.1-3.6.5-neoforge.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-Mo-Glass-1.10-MC1.21-NeoForge.jar",
+          "name": "Mo-Glass-1.10-MC1.21-NeoForge.jar",
+          "type": "File",
+          "artifact": {
+            "size": 537510,
+            "MD5": "e5b8d5b58f83c4d9a11213b99b121c11",
+            "url": "https://www.curseforge.com/api/v1/mods/353426/files/5905843/download",
+            "path": "mods/Mo-Glass-1.10-MC1.21-NeoForge.jar"
           }
         },
         {
