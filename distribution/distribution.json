@@ -1,5 +1,5 @@
 {
-  "version": "0.2.18",
+  "version": "0.2.19",
   "rss": "",
   "servers": [
     {
@@ -7,12 +7,13 @@
       "name": "영무예다음",
       "description": "충북혁신도시 영무예다음 친구들을 위한 Vanilla+ Minecraft 서버",
       "icon": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/server-icon.png",
-      "version": "0.2.18",
+      "version": "0.2.19",
       "cleanupFiles": [
         "mods/fabric-api-0.116.17+1.21.1.jar",
         "mods/armor-hider-neoforge-0.13.4+mc-1.21.0-1.jar",
         "mods/carryon-neoforge-1.21.1-2.2.6.13.jar",
-        "mods/fantasyfurniture-21.10.5.jar"
+        "mods/fantasyfurniture-21.10.5.jar",
+        "mods/fairylights-neoforge-1.21.1-1.2.3.jar"
       ],
       "address": "heyodd.iptime.org",
       "minecraftVersion": "1.21.1",
@@ -896,14 +897,14 @@
           }
         },
         {
-          "id": "heyodd-mods-fairylights-neoforge-1.21.1-1.2.3.jar",
-          "name": "fairylights-neoforge-1.21.1-1.2.3.jar",
+          "id": "heyodd-mods-fairylights-neoforge-1.21.1-1.2.6.jar",
+          "name": "fairylights-neoforge-1.21.1-1.2.6.jar",
           "type": "File",
           "artifact": {
-            "size": 628094,
-            "MD5": "22b1774c6c3bba173a872dbf4f14cedd",
-            "url": "https://www.curseforge.com/api/v1/mods/1537594/files/8126108/download",
-            "path": "mods/fairylights-neoforge-1.21.1-1.2.3.jar"
+            "size": 1937803,
+            "MD5": "f364cb6bb0e67a0e4a7830536bafb7d6",
+            "url": "https://www.curseforge.com/api/v1/mods/1537594/files/8193957/download",
+            "path": "mods/fairylights-neoforge-1.21.1-1.2.6.jar"
           }
         },
         {

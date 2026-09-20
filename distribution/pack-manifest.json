@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "packVersion": "1.0.11",
+  "packVersion": "1.0.12",
   "minecraft": "1.21.1",
   "neoForge": "21.1.249",
   "server": "heyodd.iptime.org",
@@ -38,7 +38,7 @@
     { "path": "mods/immersive_furniture-neoforge-0.3.3+1.21.1.jar", "url": "https://www.curseforge.com/api/v1/mods/1283531/files/8563588/download", "sha256": "2374676cd260713b75ebd35bb4c4ab9925d21671401b602244e0e598842d2f17", "size": 1018042 },
     { "path": "mods/cluttered-[NeoForge]-3.0.3-1.21.1.jar", "url": "https://www.curseforge.com/api/v1/mods/826308/files/7385620/download", "sha256": "c1649584e178ce04b2ca923f4afcd5640f67cea7a122dc166f9a773db8683e8f", "size": 5404861 },
     { "path": "mods/crittersandcompanions-neoforge-1.21.1-2.7.0.jar", "url": "https://www.curseforge.com/api/v1/mods/574913/files/8646976/download", "sha256": "bc09d4e9996fae2c17092b3f58e2cc6ffe49d176e7cdf06495eeb4ac9a85b5dd", "size": 2098079 },
-    { "path": "mods/fairylights-neoforge-1.21.1-1.2.3.jar", "url": "https://www.curseforge.com/api/v1/mods/1537594/files/8126108/download", "sha256": "4881ef2f1247a26057a9257edae6d8dd6c175840f78ebf538e12b85c0de9515b", "size": 628094 },
+    { "path": "mods/fairylights-neoforge-1.21.1-1.2.6.jar", "url": "https://www.curseforge.com/api/v1/mods/1537594/files/8193957/download", "sha256": "463fcf7df2932d10f793013bc0a99f2ee4346007932887f4662c17348a9a80e9", "size": 1937803 },
     { "path": "mods/FarmersDelight-1.21.1-1.3.4.jar", "url": "https://www.curseforge.com/api/v1/mods/398521/files/8765184/download", "sha256": "139ad7696462c89c03eea463f805abffa552526c5dadaadae221dd9624cb197c", "size": 3160490 },
     { "path": "mods/handcrafted-neoforge-1.21.1-4.0.3.jar", "url": "https://www.curseforge.com/api/v1/mods/538214/files/6330030/download", "sha256": "6f2a776fb28ed07d370899814e5e711fbeebe31396097d78a3b550439b364948", "size": 7132842 },
     { "path": "mods/furniture_mod_tools_refurbished-1.0.0-neoforge-1.21.1.jar", "url": "https://www.curseforge.com/api/v1/mods/1405249/files/7336865/download", "sha256": "88a79070771af9aa6d4a5602418c4ffe7277b014f7c073b35520b0704f80fcfe", "size": 233067 },
