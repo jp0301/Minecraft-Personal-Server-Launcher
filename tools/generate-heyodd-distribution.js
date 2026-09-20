@@ -2,9 +2,9 @@ const crypto = require('crypto')
 const fs = require('fs')
 const path = require('path')
 
-const [minecraftRoot, outputRoot, packManifestPath] = process.argv.slice(2)
+const [minecraftRoot, outputRoot, packManifestPath, packRoot = minecraftRoot] = process.argv.slice(2)
 if(!minecraftRoot || !outputRoot || !packManifestPath) {
-    throw new Error('Usage: node tools/generate-heyodd-distribution.js <minecraftRoot> <outputRoot> <packManifest>')
+    throw new Error('Usage: node tools/generate-heyodd-distribution.js <minecraftRoot> <outputRoot> <packManifest> [packRoot]')
 }
 
 const repoRaw = 'https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution'
@@ -65,7 +65,7 @@ const libraryModules = versionManifest.libraries.map(lib => {
 
 const packManifest = JSON.parse(fs.readFileSync(packManifestPath, 'utf8'))
 const packModules = packManifest.files.map(file => {
-    const localFile = path.join(minecraftRoot, ...file.path.split('/'))
+    const localFile = path.join(packRoot, ...file.path.split('/'))
     if(!fs.existsSync(localFile)) {
         throw new Error(`Pack file is missing: ${localFile}`)
     }
@@ -96,14 +96,14 @@ const instanceModules = fs.existsSync(instanceRoot) ? walk(instanceRoot).map(fil
 
 const versionArtifact = artifact(versionOutput, `${repoRaw}/neoforge/${versionId}.json`)
 const distribution = {
-    version: '0.2.15',
+    version: '0.2.16',
     rss: '',
     servers: [{
         id: 'heyodd-1.21.1',
         name: '영무예다음',
         description: '충북혁신도시 영무예다음 친구들을 위한 Vanilla+ Minecraft 서버',
         icon: `${repoRaw}/server-icon.png`,
-        version: '0.2.15',
+        version: '0.2.16',
         cleanupFiles: [
             'mods/fabric-api-0.116.17+1.21.1.jar',
             'mods/armor-hider-neoforge-0.13.4+mc-1.21.0-1.jar'

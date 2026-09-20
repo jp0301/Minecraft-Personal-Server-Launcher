@@ -49,7 +49,7 @@ Windows 설치 파일은 `npm run dist:win`으로 만듭니다. 결과물은 `di
 3. 현재 Minecraft 설치를 기준으로 배포 목록을 다시 생성합니다.
 
 ```powershell
-node tools/generate-heyodd-distribution.js "$env:APPDATA\.minecraft" distribution distribution/pack-manifest.json
+node tools/generate-heyodd-distribution.js "$env:APPDATA\.heyoddlauncher\common" distribution distribution/pack-manifest.json "$env:APPDATA\.heyoddlauncher\instances\heyodd-1.21.1"
 npm run lint
 ```
 

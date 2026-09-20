@@ -1,5 +1,5 @@
 {
-  "version": "0.2.15",
+  "version": "0.2.16",
   "rss": "",
   "servers": [
     {
@@ -7,7 +7,7 @@
       "name": "영무예다음",
       "description": "충북혁신도시 영무예다음 친구들을 위한 Vanilla+ Minecraft 서버",
       "icon": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/server-icon.png",
-      "version": "0.2.15",
+      "version": "0.2.16",
       "cleanupFiles": [
         "mods/fabric-api-0.116.17+1.21.1.jar",
         "mods/armor-hider-neoforge-0.13.4+mc-1.21.0-1.jar"
@@ -608,6 +608,17 @@
           }
         },
         {
+          "id": "heyodd-mods-create-1.21.1-6.0.10.jar",
+          "name": "create-1.21.1-6.0.10.jar",
+          "type": "File",
+          "artifact": {
+            "size": 19123767,
+            "MD5": "179189c52b45a469e683570be4e77188",
+            "url": "https://www.curseforge.com/api/v1/mods/328085/files/7963363/download",
+            "path": "mods/create-1.21.1-6.0.10.jar"
+          }
+        },
+        {
           "id": "heyodd-mods-EasyMagic-v21.1.4-1.21.1-NeoForge.jar",
           "name": "EasyMagic-v21.1.4-1.21.1-NeoForge.jar",
           "type": "File",
@@ -649,6 +660,28 @@
             "MD5": "0bfb5c559b630018d390b11a277c66f4",
             "url": "https://cdn.modrinth.com/data/Aqlf1Shp/versions/V9WdDUTx/forgified-fabric-api-0.116.15%2B2.3.5%2B1.21.1.jar",
             "path": "mods/forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-idas-1.13.7+1.21.1-neoforge.jar",
+          "name": "idas-1.13.7+1.21.1-neoforge.jar",
+          "type": "File",
+          "artifact": {
+            "size": 14485475,
+            "MD5": "e214a6552af3845994da96b3f79c516d",
+            "url": "https://www.curseforge.com/api/v1/mods/605375/files/8232359/download",
+            "path": "mods/idas-1.13.7+1.21.1-neoforge.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-integrated_api-neoforge-1.21.1-1.8.2.jar",
+          "name": "integrated_api-neoforge-1.21.1-1.8.2.jar",
+          "type": "File",
+          "artifact": {
+            "size": 478502,
+            "MD5": "8b11733fca6778e344eb6014895cc33e",
+            "url": "https://www.curseforge.com/api/v1/mods/817709/files/8868053/download",
+            "path": "mods/integrated_api-neoforge-1.21.1-1.8.2.jar"
           }
         },
         {
@@ -707,6 +740,17 @@
           }
         },
         {
+          "id": "heyodd-mods-moonlight-1.21.1-3.6.5-neoforge.jar",
+          "name": "moonlight-1.21.1-3.6.5-neoforge.jar",
+          "type": "File",
+          "artifact": {
+            "size": 2280483,
+            "MD5": "509276449f20e19dedb6ab17f58ef492",
+            "url": "https://www.curseforge.com/api/v1/mods/499980/files/8905916/download",
+            "path": "mods/moonlight-1.21.1-3.6.5-neoforge.jar"
+          }
+        },
+        {
           "id": "heyodd-mods-MouseTweaks-neoforge-mc1.21-2.26.1.jar",
           "name": "MouseTweaks-neoforge-mc1.21-2.26.1.jar",
           "type": "File",
@@ -740,6 +784,17 @@
           }
         },
         {
+          "id": "heyodd-mods-Quark-4.1-485.jar",
+          "name": "Quark-4.1-485.jar",
+          "type": "File",
+          "artifact": {
+            "size": 15590176,
+            "MD5": "e815269dd242eaeab4d32fc1fb8f7342",
+            "url": "https://www.curseforge.com/api/v1/mods/243121/files/8895753/download",
+            "path": "mods/Quark-4.1-485.jar"
+          }
+        },
+        {
           "id": "heyodd-mods-sodium-neoforge-0.8.13+mc1.21.1.jar",
           "name": "sodium-neoforge-0.8.13+mc1.21.1.jar",
           "type": "File",
@@ -748,6 +803,28 @@
             "MD5": "c2bc7287841c29e25ce553baae1700a0",
             "url": "https://www.curseforge.com/api/v1/mods/394468/files/8756580/download",
             "path": "mods/sodium-neoforge-0.8.13+mc1.21.1.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-supplementaries-1.21.1-3.9.9-neoforge.jar",
+          "name": "supplementaries-1.21.1-3.9.9-neoforge.jar",
+          "type": "File",
+          "artifact": {
+            "size": 13548968,
+            "MD5": "68826f7de4c0b7c71a8853d80680423f",
+            "url": "https://www.curseforge.com/api/v1/mods/412082/files/8852720/download",
+            "path": "mods/supplementaries-1.21.1-3.9.9-neoforge.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-TreeChop-1.21.1-neoforge-0.19.3.jar",
+          "name": "TreeChop-1.21.1-neoforge-0.19.3.jar",
+          "type": "File",
+          "artifact": {
+            "size": 517750,
+            "MD5": "c87da07af73f649d1fe4ec6ca6d5a3ea",
+            "url": "https://cdn.modrinth.com/data/gHoB7SHO/versions/iLXWmfax/TreeChop-1.21.1-neoforge-0.19.3.jar",
+            "path": "mods/TreeChop-1.21.1-neoforge-0.19.3.jar"
           }
         },
         {
@@ -781,6 +858,17 @@
             "MD5": "310475ff06e76f0c552e99771af536d3",
             "url": "https://cdn.modrinth.com/data/2H1rLgy4/versions/nC2iqgow/xplus-autofish-1.3.3-neoforged-mc1.21.1.jar",
             "path": "mods/xplus-autofish-1.3.3-neoforged-mc1.21.1.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-Zeta-1.1-40.jar",
+          "name": "Zeta-1.1-40.jar",
+          "type": "File",
+          "artifact": {
+            "size": 763725,
+            "MD5": "cc0d6e584cfca1f1383c9f120c035c22",
+            "url": "https://www.curseforge.com/api/v1/mods/968868/files/7980010/download",
+            "path": "mods/Zeta-1.1-40.jar"
           }
         },
         {
