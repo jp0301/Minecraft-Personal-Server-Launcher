@@ -96,17 +96,19 @@ const instanceModules = fs.existsSync(instanceRoot) ? walk(instanceRoot).map(fil
 
 const versionArtifact = artifact(versionOutput, `${repoRaw}/neoforge/${versionId}.json`)
 const distribution = {
-    version: '0.2.16',
+    version: '0.2.18',
     rss: '',
     servers: [{
         id: 'heyodd-1.21.1',
         name: '영무예다음',
         description: '충북혁신도시 영무예다음 친구들을 위한 Vanilla+ Minecraft 서버',
         icon: `${repoRaw}/server-icon.png`,
-        version: '0.2.16',
+        version: '0.2.18',
         cleanupFiles: [
             'mods/fabric-api-0.116.17+1.21.1.jar',
-            'mods/armor-hider-neoforge-0.13.4+mc-1.21.0-1.jar'
+            'mods/armor-hider-neoforge-0.13.4+mc-1.21.0-1.jar',
+            'mods/carryon-neoforge-1.21.1-2.2.6.13.jar',
+            'mods/fantasyfurniture-21.10.5.jar'
         ],
         address: 'heyodd.iptime.org',
         minecraftVersion: '1.21.1',
