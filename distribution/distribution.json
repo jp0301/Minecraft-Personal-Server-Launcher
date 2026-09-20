@@ -1,5 +1,5 @@
 {
-  "version": "0.2.16",
+  "version": "0.2.18",
   "rss": "",
   "servers": [
     {
@@ -7,10 +7,12 @@
       "name": "영무예다음",
       "description": "충북혁신도시 영무예다음 친구들을 위한 Vanilla+ Minecraft 서버",
       "icon": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/server-icon.png",
-      "version": "0.2.16",
+      "version": "0.2.18",
       "cleanupFiles": [
         "mods/fabric-api-0.116.17+1.21.1.jar",
-        "mods/armor-hider-neoforge-0.13.4+mc-1.21.0-1.jar"
+        "mods/armor-hider-neoforge-0.13.4+mc-1.21.0-1.jar",
+        "mods/carryon-neoforge-1.21.1-2.2.6.13.jar",
+        "mods/fantasyfurniture-21.10.5.jar"
       ],
       "address": "heyodd.iptime.org",
       "minecraftVersion": "1.21.1",
@@ -553,17 +555,6 @@
           }
         },
         {
-          "id": "heyodd-mods-carryon-neoforge-1.21.1-2.2.6.13.jar",
-          "name": "carryon-neoforge-1.21.1-2.2.6.13.jar",
-          "type": "File",
-          "artifact": {
-            "size": 361486,
-            "MD5": "2cf051fdf9bd99b6311138d55b595e75",
-            "url": "https://www.curseforge.com/api/v1/mods/274259/files/8512888/download",
-            "path": "mods/carryon-neoforge-1.21.1-2.2.6.13.jar"
-          }
-        },
-        {
           "id": "heyodd-mods-cloth-config-15.0.140-neoforge.jar",
           "name": "cloth-config-15.0.140-neoforge.jar",
           "type": "File",
@@ -869,6 +860,259 @@
             "MD5": "cc0d6e584cfca1f1383c9f120c035c22",
             "url": "https://www.curseforge.com/api/v1/mods/968868/files/7980010/download",
             "path": "mods/Zeta-1.1-40.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-immersive_furniture-neoforge-0.3.3+1.21.1.jar",
+          "name": "immersive_furniture-neoforge-0.3.3+1.21.1.jar",
+          "type": "File",
+          "artifact": {
+            "size": 1018042,
+            "MD5": "be12f4b0637061ece138f9f1f06d852f",
+            "url": "https://www.curseforge.com/api/v1/mods/1283531/files/8563588/download",
+            "path": "mods/immersive_furniture-neoforge-0.3.3+1.21.1.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-cluttered-[NeoForge]-3.0.3-1.21.1.jar",
+          "name": "cluttered-[NeoForge]-3.0.3-1.21.1.jar",
+          "type": "File",
+          "artifact": {
+            "size": 5404861,
+            "MD5": "7d86214eb21aef9f85711b92b26bc2b3",
+            "url": "https://www.curseforge.com/api/v1/mods/826308/files/7385620/download",
+            "path": "mods/cluttered-[NeoForge]-3.0.3-1.21.1.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-crittersandcompanions-neoforge-1.21.1-2.7.0.jar",
+          "name": "crittersandcompanions-neoforge-1.21.1-2.7.0.jar",
+          "type": "File",
+          "artifact": {
+            "size": 2098079,
+            "MD5": "ede12f7d45ce384f3f6e1443c83619e6",
+            "url": "https://www.curseforge.com/api/v1/mods/574913/files/8646976/download",
+            "path": "mods/crittersandcompanions-neoforge-1.21.1-2.7.0.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-fairylights-neoforge-1.21.1-1.2.3.jar",
+          "name": "fairylights-neoforge-1.21.1-1.2.3.jar",
+          "type": "File",
+          "artifact": {
+            "size": 628094,
+            "MD5": "22b1774c6c3bba173a872dbf4f14cedd",
+            "url": "https://www.curseforge.com/api/v1/mods/1537594/files/8126108/download",
+            "path": "mods/fairylights-neoforge-1.21.1-1.2.3.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-FarmersDelight-1.21.1-1.3.4.jar",
+          "name": "FarmersDelight-1.21.1-1.3.4.jar",
+          "type": "File",
+          "artifact": {
+            "size": 3160490,
+            "MD5": "588f140d2c343e9029dc30f10b73fdd4",
+            "url": "https://www.curseforge.com/api/v1/mods/398521/files/8765184/download",
+            "path": "mods/FarmersDelight-1.21.1-1.3.4.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-handcrafted-neoforge-1.21.1-4.0.3.jar",
+          "name": "handcrafted-neoforge-1.21.1-4.0.3.jar",
+          "type": "File",
+          "artifact": {
+            "size": 7132842,
+            "MD5": "0f875f5741a6fad6f1c4f6fdbe5f538b",
+            "url": "https://www.curseforge.com/api/v1/mods/538214/files/6330030/download",
+            "path": "mods/handcrafted-neoforge-1.21.1-4.0.3.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-furniture_mod_tools_refurbished-1.0.0-neoforge-1.21.1.jar",
+          "name": "furniture_mod_tools_refurbished-1.0.0-neoforge-1.21.1.jar",
+          "type": "File",
+          "artifact": {
+            "size": 233067,
+            "MD5": "b9624fbbf5abb3d3c3704504e78ab92c",
+            "url": "https://www.curseforge.com/api/v1/mods/1405249/files/7336865/download",
+            "path": "mods/furniture_mod_tools_refurbished-1.0.0-neoforge-1.21.1.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-cfm+nfm-neoforge-2026.09.12-1.21.1.jar",
+          "name": "cfm+nfm-neoforge-2026.09.12-1.21.1.jar",
+          "type": "File",
+          "artifact": {
+            "size": 4798816,
+            "MD5": "253d96c4464a7b92e7c74453f06f6241",
+            "url": "https://www.curseforge.com/api/v1/mods/593876/files/8869207/download",
+            "path": "mods/cfm+nfm-neoforge-2026.09.12-1.21.1.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-Oh-The-Biomes-Weve-Gone-NeoForge-2.6.0.jar",
+          "name": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.0.jar",
+          "type": "File",
+          "artifact": {
+            "size": 20484967,
+            "MD5": "6576211fdac34b5b288850144e1547a7",
+            "url": "https://www.curseforge.com/api/v1/mods/1070751/files/8245253/download",
+            "path": "mods/Oh-The-Biomes-Weve-Gone-NeoForge-2.6.0.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-another_furniture-neoforge-4.0.2.jar",
+          "name": "another_furniture-neoforge-4.0.2.jar",
+          "type": "File",
+          "artifact": {
+            "size": 2417424,
+            "MD5": "49f67d0c26a0d9efe494c07ebc04dc82",
+            "url": "https://www.curseforge.com/api/v1/mods/610492/files/7355747/download",
+            "path": "mods/another_furniture-neoforge-4.0.2.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-mcw-furniture-3.4.1-mc1.21.1neoforge.jar",
+          "name": "mcw-furniture-3.4.1-mc1.21.1neoforge.jar",
+          "type": "File",
+          "artifact": {
+            "size": 2080436,
+            "MD5": "bef925460c964754872b28a13b2e2a74",
+            "url": "https://www.curseforge.com/api/v1/mods/359540/files/7255584/download",
+            "path": "mods/mcw-furniture-3.4.1-mc1.21.1neoforge.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-mcw-mcwwindows-2.4.2-mc1.21.1neoforge.jar",
+          "name": "mcw-mcwwindows-2.4.2-mc1.21.1neoforge.jar",
+          "type": "File",
+          "artifact": {
+            "size": 1261268,
+            "MD5": "fb18ea4529ea3670eb5e621ab900ced7",
+            "url": "https://www.curseforge.com/api/v1/mods/363569/files/7317672/download",
+            "path": "mods/mcw-mcwwindows-2.4.2-mc1.21.1neoforge.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-mcw-doors-1.1.5-mc1.21.1neoforge.jar",
+          "name": "mcw-doors-1.1.5-mc1.21.1neoforge.jar",
+          "type": "File",
+          "artifact": {
+            "size": 1190404,
+            "MD5": "af8ff4803b80715eb3eeb9bc77d704cf",
+            "url": "https://www.curseforge.com/api/v1/mods/378646/files/7618651/download",
+            "path": "mods/mcw-doors-1.1.5-mc1.21.1neoforge.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+          "name": "TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+          "type": "File",
+          "artifact": {
+            "size": 120365,
+            "MD5": "66fc7a85676199608348681d006d8c2e",
+            "url": "https://www.curseforge.com/api/v1/mods/940057/files/6054947/download",
+            "path": "mods/TerraBlender-neoforge-1.21.1-4.1.0.8.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-BiomesOPlenty-neoforge-1.21.1-21.1.0.14.jar",
+          "name": "BiomesOPlenty-neoforge-1.21.1-21.1.0.14.jar",
+          "type": "File",
+          "artifact": {
+            "size": 22338156,
+            "MD5": "6ebaeb8ba896b40b983df4f76f09de03",
+            "url": "https://www.curseforge.com/api/v1/mods/220318/files/8288121/download",
+            "path": "mods/BiomesOPlenty-neoforge-1.21.1-21.1.0.14.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-geckolib-neoforge-1.21.1-4.9.3.jar",
+          "name": "geckolib-neoforge-1.21.1-4.9.3.jar",
+          "type": "File",
+          "artifact": {
+            "size": 634531,
+            "MD5": "ddb8a5ef680c3a1df09ef98dc8b7c116",
+            "url": "https://www.curseforge.com/api/v1/mods/388172/files/8893490/download",
+            "path": "mods/geckolib-neoforge-1.21.1-4.9.3.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-YetAnotherConfigLib-3.6.2+1.21-neoforge.jar",
+          "name": "YetAnotherConfigLib-3.6.2+1.21-neoforge.jar",
+          "type": "File",
+          "artifact": {
+            "size": 1113071,
+            "MD5": "09e6e16f394e39b4c945870f55a5a123",
+            "url": "https://www.curseforge.com/api/v1/mods/667299/files/5963247/download",
+            "path": "mods/YetAnotherConfigLib-3.6.2+1.21-neoforge.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-resourcefullib-neoforge-1.21-3.0.12.jar",
+          "name": "resourcefullib-neoforge-1.21-3.0.12.jar",
+          "type": "File",
+          "artifact": {
+            "size": 484332,
+            "MD5": "32da88903167d24bb20febeeb2c79225",
+            "url": "https://www.curseforge.com/api/v1/mods/570073/files/5973188/download",
+            "path": "mods/resourcefullib-neoforge-1.21-3.0.12.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-framework-neoforge-1.21.1-0.13.11.jar",
+          "name": "framework-neoforge-1.21.1-0.13.11.jar",
+          "type": "File",
+          "artifact": {
+            "size": 387334,
+            "MD5": "06f94f31d9e0b59c8b42a5b0df7013d6",
+            "url": "https://www.curseforge.com/api/v1/mods/549225/files/7530361/download",
+            "path": "mods/framework-neoforge-1.21.1-0.13.11.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-refurbished_furniture-neoforge-1.21.1-1.0.22.jar",
+          "name": "refurbished_furniture-neoforge-1.21.1-1.0.22.jar",
+          "type": "File",
+          "artifact": {
+            "size": 7133477,
+            "MD5": "7379bc72b92f838949c073961dc72351",
+            "url": "https://www.curseforge.com/api/v1/mods/897116/files/7473565/download",
+            "path": "mods/refurbished_furniture-neoforge-1.21.1-1.0.22.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-Corgilib-NeoForge-1.21.1-5.0.0.9.jar",
+          "name": "Corgilib-NeoForge-1.21.1-5.0.0.9.jar",
+          "type": "File",
+          "artifact": {
+            "size": 309763,
+            "MD5": "c03b02005b735e2221438a5346d8c77f",
+            "url": "https://www.curseforge.com/api/v1/mods/693313/files/7773534/download",
+            "path": "mods/Corgilib-NeoForge-1.21.1-5.0.0.9.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-Oh-The-Trees-Youll-Grow-neoforge-1.21.1-5.0.11.jar",
+          "name": "Oh-The-Trees-Youll-Grow-neoforge-1.21.1-5.0.11.jar",
+          "type": "File",
+          "artifact": {
+            "size": 123704,
+            "MD5": "bac178d1624a1f8427b4a5b8b707bca7",
+            "url": "https://www.curseforge.com/api/v1/mods/962544/files/6479091/download",
+            "path": "mods/Oh-The-Trees-Youll-Grow-neoforge-1.21.1-5.0.11.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-GlitchCore-neoforge-1.21.1-2.1.0.2.jar",
+          "name": "GlitchCore-neoforge-1.21.1-2.1.0.2.jar",
+          "type": "File",
+          "artifact": {
+            "size": 90717,
+            "MD5": "3bdf763d2461aa2731ed3515e0761d2f",
+            "url": "https://www.curseforge.com/api/v1/mods/955399/files/8109792/download",
+            "path": "mods/GlitchCore-neoforge-1.21.1-2.1.0.2.jar"
           }
         },
         {
