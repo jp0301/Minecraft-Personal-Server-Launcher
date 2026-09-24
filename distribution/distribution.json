@@ -1,5 +1,5 @@
 {
-  "version": "0.2.20",
+  "version": "0.2.21",
   "rss": "",
   "servers": [
     {
@@ -7,7 +7,7 @@
       "name": "영무예다음",
       "description": "충북혁신도시 영무예다음 친구들을 위한 Vanilla+ Minecraft 서버",
       "icon": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/server-icon.png",
-      "version": "0.2.20",
+      "version": "0.2.21",
       "cleanupFiles": [
         "mods/fabric-api-0.116.17+1.21.1.jar",
         "mods/armor-hider-neoforge-0.13.4+mc-1.21.0-1.jar",
@@ -1499,6 +1499,39 @@
             "MD5": "73634d09ed85bf0df7b1e07a7c13e4e4",
             "url": "https://raw.githubusercontent.com/jp0301/Minecraft-Personal-Server-Launcher/main/distribution/instance/options.txt",
             "path": "options.txt"
+          }
+        },
+        {
+          "id": "heyodd-mods-fantasyfurniture-1.21.1-9.0.0-port.1.jar",
+          "name": "fantasyfurniture-1.21.1-9.0.0-port.1.jar",
+          "type": "File",
+          "artifact": {
+            "size": 2601807,
+            "MD5": "1de1dc54873d73f7dd8abae6b6796469",
+            "url": "https://mediafilez.forgecdn.net/files/8942/667/fantasyfurniture-1.21.1-9.0.0-port.1.jar",
+            "path": "mods/fantasyfurniture-1.21.1-9.0.0-port.1.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-modernxl_3-3.0.1-1.21.1Neo.jar",
+          "name": "modernxl_3-3.0.1-1.21.1Neo.jar",
+          "type": "File",
+          "artifact": {
+            "size": 78558572,
+            "MD5": "65c005457d4e2326e3fa4ec47ea9f4d8",
+            "url": "https://www.curseforge.com/api/v1/mods/1636620/files/8648017/download",
+            "path": "mods/modernxl_3-3.0.1-1.21.1Neo.jar"
+          }
+        },
+        {
+          "id": "heyodd-mods-beautify-neoforge-1.21.1-2.0.2.jar",
+          "name": "beautify-neoforge-1.21.1-2.0.2.jar",
+          "type": "File",
+          "artifact": {
+            "size": 932199,
+            "MD5": "e18f49c2d8723f77da79f73ec83a316f",
+            "url": "https://cdn.modrinth.com/data/9BPuv4vL/versions/xVfv1ket/beautify-neoforge-1.21.1-2.0.2.jar",
+            "path": "mods/beautify-neoforge-1.21.1-2.0.2.jar"
           }
         }
       ]
