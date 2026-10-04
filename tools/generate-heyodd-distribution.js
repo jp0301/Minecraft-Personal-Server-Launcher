@@ -82,7 +82,14 @@ const walk = directory => fs.readdirSync(directory, { withFileTypes: true }).fla
     return entry.isDirectory() ? walk(full) : [full]
 })
 
-const instanceModules = fs.existsSync(instanceRoot) ? walk(instanceRoot).map(file => {
+// Files such as options.txt are owned by each player. Managing them as pack
+// artifacts would restore the publisher's keybinds and mouse settings on every
+// launch whenever the local hash changes.
+const userManagedInstanceFiles = new Set(['options.txt'])
+const instanceModules = fs.existsSync(instanceRoot) ? walk(instanceRoot).filter(file => {
+    const relative = path.relative(instanceRoot, file).replaceAll('\\', '/')
+    return !userManagedInstanceFiles.has(relative)
+}).map(file => {
     const relative = path.relative(instanceRoot, file).replaceAll('\\', '/')
     return {
         id: `heyodd-config-${relative.replaceAll('/', '-').replaceAll(':', '-')}`,
@@ -96,14 +103,14 @@ const instanceModules = fs.existsSync(instanceRoot) ? walk(instanceRoot).map(fil
 
 const versionArtifact = artifact(versionOutput, `${repoRaw}/neoforge/${versionId}.json`)
 const distribution = {
-    version: '0.2.21',
+    version: '0.2.22',
     rss: '',
     servers: [{
         id: 'heyodd-1.21.1',
         name: '영무예다음',
         description: '충북혁신도시 영무예다음 친구들을 위한 Vanilla+ Minecraft 서버',
         icon: `${repoRaw}/server-icon.png`,
-        version: '0.2.21',
+        version: '0.2.22',
         cleanupFiles: [
             'mods/fabric-api-0.116.17+1.21.1.jar',
             'mods/armor-hider-neoforge-0.13.4+mc-1.21.0-1.jar',
